@@ -1,11 +1,28 @@
 stories:
- - story: greet and subscribe
+ - story: greet and ask
    steps:
    - intent: greet
-   - action: utter_greet
+   - action: utter_greet_and_ask
   
  - story: are you a bot
    steps:
    - intent: bot_challenge
    - action: utter_i_am_bot
-
+ 
+ - story: ptyxiakh able
+   steps:
+   - intent: greet
+   - action: utter_greet_and_ask
+   - intent: am_i_able_ptyxiakh
+   - action: utter_ask_dm_ptyxiakhs
+   - intent: affirm
+   - action: utter_able_ptyxiakh
+ 
+ - story: ptyxiakh unable
+   steps:
+   - intent: greet
+   - action: utter_greet_and_ask
+   - intent: am_i_able_ptyxiakh
+   - action: utter_ask_dm_ptyxiakhs
+   - intent: deny
+   - action: utter_unable_ptyxiakh

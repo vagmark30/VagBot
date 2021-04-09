@@ -5,16 +5,30 @@ session_config:
 intents:
 - greet
 - bot_challenge
+- am_i_able_ptyxiakh
+- affirm
+- deny
 responses:
-  utter_greet:
+  utter_greet_and_ask:
   - text: |
       Γειά! Πως μπορώ να βοηθήσω?
-  - text: |
-      Γειά!
   utter_i_am_bot:
   - text: |
       Είμαι ενα Chatμποτ
+  utter_ask_dm_ptyxiakhs:
+  - text: |
+      Έχεις συμπληρώσει 160 Δ.Μ;
+  utter_able_ptyxiakh:
+  - text: |
+      Ναι! Μπορείς να αναλάβεις πτυχιακή.
+  utter_unable_ptyxiakh:
+  - text: |
+      Δυστυχως οχι! Πρεπει να εχεις συμπληρωσει τουλαχιστον 160 Δ.Μ για να μπορεις αναλάβεις πτυχιακή.
 actions:
 - '...'
-- utter_greet
+- utter_greet_and_ask
 - utter_i_am_bot
+- utter_ask_dm_ptyxiakhs
+- utter_able_ptyxiakh
+- utter_unable_ptyxiakh
+

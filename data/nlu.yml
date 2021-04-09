@@ -13,3 +13,22 @@ nlu:
     - Μιλάω με ρομπότ?
     - Είσαι άνθρωπος;
     - Μιλάω με άνθρωπο;
+    - intent: affirm
+- intent: affirm 
+  examples: |
+    - ναι
+    - ν
+    - Ναι!
+    - Προφανως
+
+- intent: deny
+  examples: |
+    - οχι!
+    - ο
+    - οχι
+    - Μπα
+    - Δυσκολα
+- intent: am_i_able_ptyxiakh
+  examples: |
+    - Μπορω να παρω πτυχιακη?
+    - Μπορω να αναλαβω πτυχιακη?

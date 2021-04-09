@@ -1,9 +1,16 @@
 responses:
   utter_greet:
   - text: |
-      Γειά! Πως μπορώ να βοηθήσω?
-  - text: |
       Γειά!
+  utter_ask_what_do_you_want:
+  - text: |
+      Πως μπορώ να βοηθήσω?
   utter_i_am_bot:
   - text: |
       Είμαι ενα Chatμποτ
+  utter_able_ptyxiakh:
+  - text: |
+      Ναι! Μπορείς να αναλάβεις πτυχιακή.
+  utter_unable_ptyxiakh:
+  - text: |
+      Δυστυχως οχι! Πρεπει να εχεις συμπληρωσει τουλαχιστον 160 Δ.Μ για να μπορεις αναλάβεις πτυχιακή.
