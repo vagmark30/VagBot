@@ -1,0 +1,9 @@
+responses:
+  utter_greet:
+  - text: |
+      Γειά! Πως μπορώ να βοηθήσω?
+  - text: |
+      Γειά!
+  utter_i_am_bot:
+  - text: |
+      Είμαι ενα Chatμποτ
