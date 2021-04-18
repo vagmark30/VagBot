@@ -1,13 +1,24 @@
 version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
-- bot_challenge
-- am_i_able_ptyxiakh
-- affirm
-- deny
+- greet:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- am_i_able_ptyxiakh:
+    use_entities: true
+- am_i_able_diplwmatikh:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+entities: []
+slots: {}
 responses:
   utter_greet_and_ask:
   - text: |
@@ -15,20 +26,33 @@ responses:
   utter_i_am_bot:
   - text: |
       Είμαι ενα Chatμποτ
-  utter_ask_dm_ptyxiakhs:
+  utter_ask_dm_ptyxiakh:
   - text: |
       Έχεις συμπληρώσει 160 Δ.Μ;
+  utter_ask_dm_diplwmatikh:
+  - text: |
+      Έχεις συμπληρώσει 210 Δ.Μ;
   utter_able_ptyxiakh:
   - text: |
       Ναι! Μπορείς να αναλάβεις πτυχιακή.
   utter_unable_ptyxiakh:
   - text: |
       Δυστυχως οχι! Πρεπει να εχεις συμπληρωσει τουλαχιστον 160 Δ.Μ για να μπορεις αναλάβεις πτυχιακή.
+  utter_able_diplwmatikh:
+  - text: |
+      Ναι! Μπορείς να αναλάβεις Διπλωματική.
+  utter_unable_diplwmatikh:
+  - text: |
+      Δυστυχώς όχι! Πρέπει να έχεις συμπληρώσει τουλάχιστον 210 Δ.Μ για να μπορείς αναλάβεις Διπλωματική εργασία.
 actions:
 - '...'
 - utter_greet_and_ask
 - utter_i_am_bot
-- utter_ask_dm_ptyxiakhs
+- utter_ask_dm_ptyxiakh
+- utter_ask_dm_diplwmatikh
+- utter_able_diplwmatikh
+- utter_unable_diplwmatikh
 - utter_able_ptyxiakh
 - utter_unable_ptyxiakh
-
+forms: {}
+e2e_actions: []

@@ -1,28 +1,34 @@
+version: "2.0"
 stories:
- - story: greet and ask
-   steps:
-   - intent: greet
-   - action: utter_greet_and_ask
-  
- - story: are you a bot
-   steps:
-   - intent: bot_challenge
-   - action: utter_i_am_bot
- 
- - story: ptyxiakh able
-   steps:
-   - intent: greet
-   - action: utter_greet_and_ask
-   - intent: am_i_able_ptyxiakh
-   - action: utter_ask_dm_ptyxiakhs
-   - intent: affirm
-   - action: utter_able_ptyxiakh
- 
- - story: ptyxiakh unable
-   steps:
-   - intent: greet
-   - action: utter_greet_and_ask
-   - intent: am_i_able_ptyxiakh
-   - action: utter_ask_dm_ptyxiakhs
-   - intent: deny
-   - action: utter_unable_ptyxiakh
+- story: greet and ask
+  steps:
+  - intent: greet
+  - action: utter_greet_and_ask
+- story: are you a bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_i_am_bot
+- story: ptyxiakh able
+  steps:
+  - intent: am_i_able_ptyxiakh
+  - action: utter_ask_dm_ptyxiakh
+  - intent: affirm
+  - action: utter_able_ptyxiakh
+- story: ptyxiakh unable
+  steps:
+  - intent: am_i_able_ptyxiakh
+  - action: utter_ask_dm_ptyxiakh
+  - intent: deny
+  - action: utter_unable_ptyxiakh
+- story: diplwmatikh able
+  steps:
+  - intent: am_i_able_diplwmatikh
+  - action: utter_ask_dm_diplwmatikh
+  - intent: affirm
+  - action: utter_able_diplwmatikh
+- story: diplwmatikh unable
+  steps:
+  - intent: am_i_able_diplwmatikh
+  - action: utter_ask_dm_diplwmatikh
+  - intent: deny
+  - action: utter_unable_diplwmatikh

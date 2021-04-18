@@ -1,16 +1,25 @@
 responses:
-  utter_greet:
+  utter_greet_and_ask:
   - text: |
-      Γειά!
-  utter_ask_what_do_you_want:
-  - text: |
-      Πως μπορώ να βοηθήσω?
+      Γειά! Πως μπορώ να βοηθήσω?
   utter_i_am_bot:
   - text: |
       Είμαι ενα Chatμποτ
+  utter_ask_dm_ptyxiakh:
+  - text: |
+      Έχεις συμπληρώσει 160 Δ.Μ;
   utter_able_ptyxiakh:
   - text: |
       Ναι! Μπορείς να αναλάβεις πτυχιακή.
   utter_unable_ptyxiakh:
   - text: |
       Δυστυχως οχι! Πρεπει να εχεις συμπληρωσει τουλαχιστον 160 Δ.Μ για να μπορεις αναλάβεις πτυχιακή.
+  utter_ask_dm_diplwmatikh:
+  - text: |
+      Έχεις συμπληρώσει 210 Δ.Μ;
+  utter_able_diplwmatikh:
+  - text: |
+      Ναι! Μπορείς να αναλάβεις Διπλωματική.
+  utter_unable_diplwmatikh:
+  - text: |
+      Δυστυχώς όχι! Πρέπει να έχεις συμπληρώσει τουλάχιστον 210 Δ.Μ για να μπορείς αναλάβεις Διπλωματική εργασία.
