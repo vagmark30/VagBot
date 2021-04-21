@@ -36,3 +36,7 @@ stories:
   steps:
   - intent: am_i_able_emvolimh
   - action: utter_ability_for_emvolimh
+- story: problem with service
+  steps:
+  - intent: having_issue_with_a_service
+  - action: action_resolve_issue

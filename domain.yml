@@ -7,6 +7,10 @@ session_config:
 intents:
 - greet:
     use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
 - bot_challenge:
     use_entities: true
 - am_i_able_ptyxiakh:
@@ -15,12 +19,17 @@ intents:
     use_entities: true
 - am_i_able_emvolimh:
     use_entities: true
-- affirm:
+- having_issue_with_a_service:
     use_entities: true
-- deny:
-    use_entities: true
-entities: []
-slots: {}
+entities:
+- yphresia
+- ypeuthynos
+slots:
+  yphresia:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
 responses:
   utter_greet_and_ask:
   - text: |
@@ -60,5 +69,6 @@ actions:
 - utter_able_ptyxiakh
 - utter_unable_ptyxiakh
 - utter_ability_for_emvolimh
+- action_resolve_issue
 forms: {}
 e2e_actions: []

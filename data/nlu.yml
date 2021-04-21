@@ -53,3 +53,15 @@ nlu:
     - Ποιά ειναι τα κριτήρια για να συμμετασχω στην εμβολιμη εξεταστικη;
     - Τι πρεπει να εχω για να δωσω στην εμβολιμη;
     - Τι πρεπει να εχει κανεις για να εχει δκαίωμα συμμετοχής στις εμβόλιμες εξεταστικές;
+- intent: having_issue_with_a_service
+  examples: |
+    - προβλήματα με το [thesis.iee.ihu.gr](yphresia:thesis)
+    - Έχω προβλημα να συνδεθω στο [θεσης](yphresia:thesis)
+    - Δεν μπορω να συνδεθω στο [thesis](yphresia:thesis)
+    - προβλήματα με [apps.iee.ihu.gr](yphresia:apps)
+    - προβλημα με το [apps.it.teithe.gr](yphresia:apps)
+    - Έχω προβλημα να συνδεθω στο [apps](yphresia:apps)
+    - προβλήματα με Μail [Μail](yphresia:webmail)
+    - Έχω προβλημα να συνδεθω στο [webmail](yphresia:webmail)
+    - Δεν μπορω να συνδεθω στο [webmail](yphresia:webmail)
+    - Δεν μπορω να συνδεθω στο [mail](yphresia:webmail)    
