@@ -4,7 +4,7 @@
 ```
 Current state of the chatbot
 ```
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/DemoDiplwmatikhDialog.png)
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhDialog.png)
 
 
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/DemoPtyxiakhDialog.png)
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoPtyxiakhDialog.png)
