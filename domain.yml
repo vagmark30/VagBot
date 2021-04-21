@@ -13,6 +13,8 @@ intents:
     use_entities: true
 - am_i_able_diplwmatikh:
     use_entities: true
+- am_i_able_emvolimh:
+    use_entities: true
 - affirm:
     use_entities: true
 - deny:
@@ -37,13 +39,16 @@ responses:
       Ναι! Μπορείς να αναλάβεις πτυχιακή.
   utter_unable_ptyxiakh:
   - text: |
-      Δυστυχως οχι! Πρεπει να εχεις συμπληρωσει τουλαχιστον 160 Δ.Μ για να μπορεις αναλάβεις πτυχιακή.
+      Δυστυχώς όχι! Πρέπει να έχεις συμπληρώσει τουλάχιστον 160 Δ.Μ για να μπορείς αναλάβεις πτυχιακή.
   utter_able_diplwmatikh:
   - text: |
       Ναι! Μπορείς να αναλάβεις Διπλωματική.
   utter_unable_diplwmatikh:
   - text: |
       Δυστυχώς όχι! Πρέπει να έχεις συμπληρώσει τουλάχιστον 210 Δ.Μ για να μπορείς αναλάβεις Διπλωματική εργασία.
+  utter_ability_for_emvolimh:
+  - text: |
+      Προϋπόθεση για την συμμετάσχει κανείς στην εμβόλιμη εξέταση ενός μαθήματος είναι να το έχει δηλώσει τουλάχιστον μια φορά στο παρελθόν και να έχει συμπληρώσει τουλάχιστον 160 ΠΜ.
 actions:
 - '...'
 - utter_greet_and_ask
@@ -54,5 +59,6 @@ actions:
 - utter_unable_diplwmatikh
 - utter_able_ptyxiakh
 - utter_unable_ptyxiakh
+- utter_ability_for_emvolimh
 forms: {}
 e2e_actions: []
