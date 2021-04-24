@@ -40,3 +40,11 @@ stories:
   steps:
   - intent: having_issue_with_a_service
   - action: action_resolve_issue
+- story: who is in charge of a service
+  steps:
+  - intent: in_charge_of_service
+  - action: action_in_charge_of_service
+- story: password recovery
+  steps:
+  - intent: password_recovery
+  - action: action_password_recovery

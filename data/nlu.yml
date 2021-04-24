@@ -55,13 +55,98 @@ nlu:
     - Τι πρεπει να εχει κανεις για να εχει δκαίωμα συμμετοχής στις εμβόλιμες εξεταστικές;
 - intent: having_issue_with_a_service
   examples: |
-    - προβλήματα με το [thesis.iee.ihu.gr](yphresia:thesis)
-    - Έχω προβλημα να συνδεθω στο [θεσης](yphresia:thesis)
-    - Δεν μπορω να συνδεθω στο [thesis](yphresia:thesis)
-    - προβλήματα με [apps.iee.ihu.gr](yphresia:apps)
-    - προβλημα με το [apps.it.teithe.gr](yphresia:apps)
-    - Έχω προβλημα να συνδεθω στο [apps](yphresia:apps)
-    - προβλήματα με Μail [Μail](yphresia:webmail)
-    - Έχω προβλημα να συνδεθω στο [webmail](yphresia:webmail)
+    - προβλήματα με το [thesis](yphresia:thesis)
+    - Έχω προβλημα με το  [θεσης](yphresia:thesis)
+    - προβλήματα με [apps](yphresia:apps)
+    - προβλημα με το [αππς](yphresia:apps)
+    - προβλήματα με [webmail](yphresia:webmail)
+    - προβλήματα με [email](yphresia:webmail)
+    - Έχω προβλημα με το  [mail](yphresia:webmail)
+    - προβλήματα με [pithia](yphresia:pithia)
+    - Έχω προβλημα με το  [πυθια](yphresia:pithia)
+    - προβλήματα με [eudoxos](yphresia:eudoxos)
+    - Έχω προβλημα με τον [Ευδοξο](yphresia:eudoxos)
+    - προβλήματα με [moodle](yphresia:moodle)
+    - Έχω προβλημα με το [μοοδλε](yphresia:moodle)
+
+- intent: in_charge_of_service
+  examples: |
+    - Απο ποιον διαχειριζεται το [apps](yphresia:apps)
+    - Ποιός ειναι υπευθυνος για το [αππς](yphresia:apps)
+    - Απο ποιον διαχειριζεται το [pithia](yphresia:pithia)
+    - Ποιός ειναι υπευθυνος για το [πυθια](yphresia:pithia)
+    - Απο ποιον διαχειριζεται το [moodle](yphresia:moodle)
+    - Ποιός ειναι υπευθυνος για το [μοοδλε](yphresia:moodle)
+    - Απο ποιον διαχειριζεται το [webmail](yphresia:webmail)
+    - Ποιός ειναι υπευθυνος για το [μειλ](yphresia:webmail)
+- intent: password_recovery
+  examples: |
+    - Δεν μπορω να συνδεθω στο [moodle](yphresia:moodle) 
+    - Δεν μπορω να συνδεθω στο [eudoxos](yphresia:eudoxos)
+    - Δεν μπορω να συνδεθω στο [pithia](yphresia:pithia)
     - Δεν μπορω να συνδεθω στο [webmail](yphresia:webmail)
-    - Δεν μπορω να συνδεθω στο [mail](yphresia:webmail)    
+    - Δεν μπορω να συνδεθω στο [thesis](yphresia:thesis)
+    - Δεν μπορω να συνδεθω στο [apps](yphresia:apps)
+    - Δεν μπορω να συνδεθω στο [vpn](yphresia:vpn)
+    - Δεν μπορω να συνδεθω στο [academicid](yphresia:academicid)
+    - Δεν μπορω να συνδεθω στο [eduroam](yphresia:eduroam)
+    - Δεν εχω προσβαση στο [μοοδλε](yphresia:moodle) 
+    - Δεν εχω προσβαση στο [eudoxo](yphresia:eudoxos)
+    - Δεν εχω προσβαση στο [πυθια](yphresia:pithia)
+    - Δεν εχω προσβαση στο [mail](yphresia:webmail)
+    - Δεν εχω προσβαση στο [thesis](yphresia:thesis)
+    - Δεν εχω προσβαση στο [αππς](yphresia:apps)
+    - Δεν εχω προσβαση στο [vpn](yphresia:vpn)
+    - Δεν εχω προσβαση στο [academicid](yphresia:academicid)
+    - Δεν εχω προσβαση στο [eduroam](yphresia:eduroam)            
+    - Ανάκτηση κωδικού [μοοντλ](yphresia:moodle) 
+    - Ανάκτηση κωδικού [Ευδοξο](yphresia:eudoxos)
+    - Ανάκτηση κωδικού [pithia](yphresia:pithia)
+    - Ανάκτηση κωδικού [μειλ](yphresia:webmail)
+    - Ανάκτηση κωδικού [θεσης](yphresia:thesis)
+    - Ανάκτηση κωδικού [apps](yphresia:apps)
+    - Ανάκτηση [vpn](yphresia:vpn)
+    - Ανάκτηση κωδικού [academicid](yphresia:academicid)
+    - Ανάκτηση κωδικού [eduroam](yphresia:eduroam)
+- synonym: thesis
+  examples: |
+   - thesis.iee.ihu.gr
+   - θεσης
+   - θέσης
+- synonym: apps
+  examples: |
+   - apps.iee.ihu.gr
+   - apps.it.teithe.gr
+   - αππς
+- synonym: webmail
+  examples: |
+   - mail
+   - μαιλ
+   - μειλ
+   - webmail.teithe.gr
+- synonym: pithia
+  examples: |
+   - πυθια
+   - πυθία
+   - pithia.teithe.gr
+- synonym: moodle
+  examples: |
+   - μοοδλε
+   - μοοντλ
+   - moodle.teithe.gr
+- synonym: eudoxos
+  examples: |
+   - Εύδοξος
+   - Εύδοξο
+   - Ευδοξος
+   - Ευδοξο
+- synonym: vpn
+  examples: |
+   - βπν
+- synonym: eduroam
+  examples: |
+   - Εντουρομ
+- synonym: academicid
+  examples: |
+   - academic
+   - ακαντεμικιδ    

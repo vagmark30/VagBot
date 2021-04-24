@@ -21,6 +21,10 @@ intents:
     use_entities: true
 - having_issue_with_a_service:
     use_entities: true
+- in_charge_of_service:
+    use_entities: true
+- password_recovery:
+    use_entities: true
 entities:
 - yphresia
 - ypeuthynos
@@ -70,5 +74,7 @@ actions:
 - utter_unable_ptyxiakh
 - utter_ability_for_emvolimh
 - action_resolve_issue
+- action_in_charge_of_service
+- action_password_recovery
 forms: {}
 e2e_actions: []
