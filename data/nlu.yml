@@ -22,14 +22,13 @@ nlu:
     - ν
     - Ναι!
     - Προφανως
-
 - intent: deny
   examples: |
     - οχι!
     - ο
     - οχι
     - Μπα
-    - Δυσκολα    
+    - Δυσκολα
 - intent: am_i_able_ptyxiakh
   examples: |
     - Μπορω να παρω πτυχιακη?
@@ -44,7 +43,7 @@ nlu:
     - Ποσες διδακτικες μοναδες εχω;
     - Ποσες δμ εχω;
     - Ποσες δ.μ εχω ως τωρα;
-    - Που μπορω να δω ποσες διδακτικες μοναδες εχω;  
+    - Που μπορω να δω ποσες διδακτικες μοναδες εχω;
 - intent: am_i_able_diplwmatikh
   examples: |
     - Μπορω να παρω Διπλωματικη?
@@ -67,98 +66,96 @@ nlu:
     - Τι μαθηματα εχει η εμβολιμη;
 - intent: having_issue_with_a_service
   examples: |
-    - προβλήματα με το [thesis](yphresia:thesis)
-    - Έχω προβλημα με το  [θεσης](yphresia:thesis)
-    - προβλήματα με [apps](yphresia:apps)
-    - προβλημα με το [αππς](yphresia:apps)
-    - προβλήματα με [webmail](yphresia:webmail)
-    - προβλήματα με [email](yphresia:webmail)
-    - Έχω προβλημα με το  [mail](yphresia:webmail)
-    - προβλήματα με [pithia](yphresia:pithia)
-    - Έχω προβλημα με το  [πυθια](yphresia:pithia)
-    - προβλήματα με [eudoxos](yphresia:eudoxos)
-    - Έχω προβλημα με τον [Ευδοξο](yphresia:eudoxos)
-    - προβλήματα με [moodle](yphresia:moodle)
-    - Έχω προβλημα με το [μοοδλε](yphresia:moodle)
-
+    - προβλήματα με το [thesis](yphresia)
+    - Έχω προβλημα με το  [θεσης]{"entity": "yphresia", "value": "thesis"}
+    - προβλήματα με [apps](yphresia)
+    - προβλημα με το [αππς]{"entity": "yphresia", "value": "apps"}
+    - προβλήματα με [webmail](yphresia)
+    - προβλήματα με [email]{"entity": "yphresia", "value": "webmail"}
+    - Έχω προβλημα με το  [mail]{"entity": "yphresia", "value": "webmail"}
+    - προβλήματα με [pithia](yphresia)
+    - Έχω προβλημα με το  [πυθια]{"entity": "yphresia", "value": "pithia"}
+    - προβλήματα με [eudoxos](yphresia)
+    - Έχω προβλημα με τον [Ευδοξο]{"entity": "yphresia", "value": "eudoxos"}
+    - προβλήματα με [moodle](yphresia)
+    - Έχω προβλημα με το [μοοδλε]{"entity": "yphresia", "value": "moodle"}
 - intent: in_charge_of_service
   examples: |
-    - Απο ποιον διαχειριζεται το [apps](yphresia:apps)
-    - Ποιός ειναι υπευθυνος για το [αππς](yphresia:apps)
-    - Απο ποιον διαχειριζεται το [pithia](yphresia:pithia)
-    - Ποιός ειναι υπευθυνος για το [πυθια](yphresia:pithia)
-    - Απο ποιον διαχειριζεται το [moodle](yphresia:moodle)
-    - Ποιός ειναι υπευθυνος για το [μοοδλε](yphresia:moodle)
-    - Απο ποιον διαχειριζεται το [webmail](yphresia:webmail)
-    - Ποιός ειναι υπευθυνος για το [μειλ](yphresia:webmail)
+    - Απο ποιον διαχειριζεται το [apps](yphresia)
+    - Ποιός ειναι υπευθυνος για το [αππς]{"entity": "yphresia", "value": "apps"}
+    - Απο ποιον διαχειριζεται το [pithia](yphresia)
+    - Ποιός ειναι υπευθυνος για το [πυθια]{"entity": "yphresia", "value": "pithia"}
+    - Απο ποιον διαχειριζεται το [moodle](yphresia)
+    - Ποιός ειναι υπευθυνος για το [μοοδλε]{"entity": "yphresia", "value": "moodle"}
+    - Απο ποιον διαχειριζεται το [webmail](yphresia)
+    - Ποιός ειναι υπευθυνος για το [μειλ]{"entity": "yphresia", "value": "webmail"}
 - intent: password_recovery
   examples: |
-    - Δεν μπορω να συνδεθω στο [moodle](yphresia:moodle) 
-    - Δεν μπορω να συνδεθω στο [eudoxos](yphresia:eudoxos)
-    - Δεν μπορω να συνδεθω στο [pithia](yphresia:pithia)
-    - Δεν μπορω να συνδεθω στο [webmail](yphresia:webmail)
-    - Δεν μπορω να συνδεθω στο [thesis](yphresia:thesis)
-    - Δεν μπορω να συνδεθω στο [apps](yphresia:apps)
-    - Δεν μπορω να συνδεθω στο [vpn](yphresia:vpn)
-    - Δεν μπορω να συνδεθω στο [academicid](yphresia:academicid)
-    - Δεν μπορω να συνδεθω στο [eduroam](yphresia:eduroam)
-    - Δεν εχω προσβαση στο [μοοδλε](yphresia:moodle) 
-    - Δεν εχω προσβαση στο [eudoxo](yphresia:eudoxos)
-    - Δεν εχω προσβαση στο [πυθια](yphresia:pithia)
-    - Δεν εχω προσβαση στο [mail](yphresia:webmail)
-    - Δεν εχω προσβαση στο [thesis](yphresia:thesis)
-    - Δεν εχω προσβαση στο [αππς](yphresia:apps)
-    - Δεν εχω προσβαση στο [vpn](yphresia:vpn)
-    - Δεν εχω προσβαση στο [academicid](yphresia:academicid)
-    - Δεν εχω προσβαση στο [eduroam](yphresia:eduroam)            
-    - Ανάκτηση κωδικού [μοοντλ](yphresia:moodle) 
-    - Ανάκτηση κωδικού [Ευδοξο](yphresia:eudoxos)
-    - Ανάκτηση κωδικού [pithia](yphresia:pithia)
-    - Ανάκτηση κωδικού [μειλ](yphresia:webmail)
-    - Ανάκτηση κωδικού [θεσης](yphresia:thesis)
-    - Ανάκτηση κωδικού [apps](yphresia:apps)
-    - Ανάκτηση [vpn](yphresia:vpn)
-    - Ανάκτηση κωδικού [academicid](yphresia:academicid)
-    - Ανάκτηση κωδικού [eduroam](yphresia:eduroam)
+    - Έχω ξεχάσει τον κωδικό μου στο [μοοδλε]{"entity": "yphresia", "value": "moodle"}
+    - Έχω ξεχάσει τον κωδικό μου στο [eudoxo]{"entity": "yphresia", "value": "eudoxos"}
+    - Έχω ξεχάσει τον κωδικό μου στο [πυθια]{"entity": "yphresia", "value": "pithia"}
+    - Έχω ξεχάσει τον κωδικό μου στο [mail]{"entity": "yphresia", "value": "webmail"}
+    - Έχω ξεχάσει τον κωδικό μου στο [thesis](yphresia)
+    - Έχω ξεχάσει τον κωδικό μου στο [αππς]{"entity": "yphresia", "value": "apps"}
+    - Έχω ξεχάσει τον κωδικό μου στο [vpn](yphresia)
+    - Έχω ξεχάσει τον κωδικό μου στο [academicid](yphresia)
+    - Έχω ξεχάσει τον κωδικό μου στο [eduroam](yphresia)
+    - Ανάκτηση κωδικού [μοοντλ]{"entity": "yphresia", "value": "moodle"}
+    - Ανάκτηση κωδικού [Ευδοξο]{"entity": "yphresia", "value": "eudoxos"}
+    - Ανάκτηση κωδικού [pithia](yphresia)
+    - Ανάκτηση κωδικού [μειλ]{"entity": "yphresia", "value": "webmail"}
+    - Ανάκτηση κωδικού [θεσης]{"entity": "yphresia", "value": "thesis"}
+    - Ανάκτηση κωδικού [apps](yphresia)
+    - Ανάκτηση [vpn](yphresia)
+    - Ανάκτηση κωδικού [academicid](yphresia)
+    - Ανάκτηση κωδικού [eduroam](yphresia)
+- intent: problem_with_apps
+  examples: |
+    - Δεν μπορω να συνδεθω στο apps
+    - Δεν εχω προσβαση στο αππς
+    - Δεν μπαινει στο apps
+    - Γιατι δεν μπορω να συνδεθω στο apps
 - synonym: thesis
   examples: |
-   - thesis.iee.ihu.gr
-   - θεσης
-   - θέσης
+    - θεσης
+    - thesis.iee.ihu.gr
+    - θέσης
 - synonym: apps
   examples: |
-   - apps.iee.ihu.gr
-   - apps.it.teithe.gr
-   - αππς
+    - αππς
+    - apps.iee.ihu.gr
+    - apps.it.teithe.gr
 - synonym: webmail
   examples: |
-   - mail
-   - μαιλ
-   - μειλ
-   - webmail.teithe.gr
+    - email
+    - mail
+    - μειλ
+    - μαιλ
+    - webmail.teithe.gr
 - synonym: pithia
   examples: |
-   - πυθια
-   - πυθία
-   - pithia.teithe.gr
-- synonym: moodle
-  examples: |
-   - μοοδλε
-   - μοοντλ
-   - moodle.teithe.gr
+    - πυθια
+    - πυθία
+    - pithia.teithe.gr
 - synonym: eudoxos
   examples: |
-   - Εύδοξος
-   - Εύδοξο
-   - Ευδοξος
-   - Ευδοξο
+    - Ευδοξο
+    - eudoxo
+    - Εύδοξος
+    - Εύδοξο
+    - Ευδοξος
+- synonym: moodle
+  examples: |
+    - μοοδλε
+    - μοοντλ
+    - moodle.teithe.gr
 - synonym: vpn
   examples: |
-   - βπν
+    - βπν
 - synonym: eduroam
   examples: |
-   - Εντουρομ
+    - Εντουρομ
 - synonym: academicid
   examples: |
-   - academic
-   - ακαντεμικιδ    
+    - academic
+    - ακαντεμικιδ

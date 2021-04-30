@@ -29,6 +29,8 @@ intents:
     use_entities: true
 - how_many_dm_have_i:
     use_entities: true
+- problem_with_apps:
+    use_entities: true
 entities:
 - yphresia
 - ypeuthynos
@@ -50,10 +52,10 @@ responses:
       Είμαι ενα Chatμποτ
   utter_ask_dm_ptyxiakh:
   - text: |
-      Έχεις συμπληρώσει 160 Δ.Μ; Αν δεν γνωρίζεις, τότε μπορείς να μάθεις σε αυτό το σύνδεσμο https://www.iee.ihu.gr/ects160/
+      Έχεις συμπληρώσει 160 Δ.Μ;    Αν δεν γνωρίζεις, τότε μπορείς να μάθεις σε αυτό το σύνδεσμο https://www.iee.ihu.gr/ects160/
   utter_ask_dm_diplwmatikh:
   - text: |
-      Έχεις συμπληρώσει 210 Δ.Μ; Αν δεν γνωρίζεις, τότε μπορείς να μάθεις σε αυτό το σύνδεσμο https://www.iee.ihu.gr/ects160/
+      Έχεις συμπληρώσει 210 Δ.Μ;    Αν δεν γνωρίζεις, τότε μπορείς να μάθεις σε αυτό το σύνδεσμο https://www.iee.ihu.gr/ects160/
   utter_how_many_dm_have_i:
   - text: |
       Μπορείς να μάθεις πόσες διδακτικές μονάδες εχεις σε αυτό το σύνδεσμο https://www.iee.ihu.gr/ects160/      
@@ -69,6 +71,15 @@ responses:
   utter_unable_diplwmatikh:
   - text: |
       Δυστυχώς όχι! Πρέπει να έχεις συμπληρώσει τουλάχιστον 210 Δ.Μ για να μπορείς αναλάβεις Διπλωματική εργασία.
+  utter_ask_if_registred_on_apps:
+  - text: |
+      Έχεις ενεργοποιήσει τον λογαριασμό σου;
+  utter_problem_as_registred_on_apps:
+  - text: |
+      Εφόσον έχεις ενεργοποιήσει τον λογαριασμό σου και δεν έχεις πρόσβαση, τότε μπορείς να επαναφέρεις τον κωδικό σου στη πλατφόρμα του apps. https://apps.iee.ihu.gr/user/reset
+  utter_problem_as_non_registred_on_apps:
+  - text: |
+      Θα πρέπει πρώτα να ενεργοποιήσεις τον λογαριασμό σου στην πλατφόρμα του apps.  https://apps.iee.ihu.gr/user/reg          
   utter_ability_for_emvolimh:
   - text: |
       Προϋπόθεση για την συμμετάσχει κανείς στην εμβόλιμη εξέταση ενός μαθήματος είναι να το έχει δηλώσει τουλάχιστον μια φορά στο παρελθόν και να έχει συμπληρώσει τουλάχιστον 160 ΠΜ.
@@ -88,6 +99,9 @@ actions:
 - utter_how_many_dm_have_i
 - utter_ability_for_emvolimh
 - utter_courses_offered_in_emvolimh
+- utter_ask_if_registred_on_apps
+- utter_problem_as_registred_on_apps
+- utter_problem_as_non_registred_on_apps
 - action_resolve_issue
 - action_in_charge_of_service
 - action_password_recovery

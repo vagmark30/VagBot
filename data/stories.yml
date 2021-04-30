@@ -41,7 +41,7 @@ stories:
   steps:
   - intent: how_many_dm_have_i
   - action: utter_how_many_dm_have_i
-  - action: utter_ask_anything_else  
+  - action: utter_ask_anything_else
 - story: emvolimh able
   steps:
   - intent: am_i_able_emvolimh
@@ -51,7 +51,7 @@ stories:
   steps:
   - intent: which_courses_are_offered_in_emvolimh
   - action: utter_courses_offered_in_emvolimh
-  - action: utter_ask_anything_else  
+  - action: utter_ask_anything_else
 - story: problem with service
   steps:
   - intent: having_issue_with_a_service
@@ -66,4 +66,18 @@ stories:
   steps:
   - intent: password_recovery
   - action: action_password_recovery
+  - action: utter_ask_anything_else
+- story: problem with apps as registred
+  steps:
+  - intent: problem_with_apps
+  - action: utter_ask_if_registred_on_apps
+  - intent: affirm
+  - action: utter_problem_as_registred_on_apps
+  - action: utter_ask_anything_else
+- story: problem with apps as non registred
+  steps:
+  - intent: problem_with_apps
+  - action: utter_ask_if_registred_on_apps
+  - intent: deny
+  - action: utter_problem_as_non_registred_on_apps
   - action: utter_ask_anything_else
