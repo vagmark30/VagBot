@@ -4,3 +4,5 @@ events.db-shm
 events.db-wal
 rasa.db
 results
+actions/__pycache__/__init__.cpython-37.pyc
+actions/__pycache__/actions.cpython-37.pyc
