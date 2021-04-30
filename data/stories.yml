@@ -37,6 +37,11 @@ stories:
   - intent: deny
   - action: utter_unable_diplwmatikh
   - action: utter_ask_anything_else
+- story: how many dm have i
+  steps:
+  - intent: how_many_dm_have_i
+  - action: utter_how_many_dm_have_i
+  - action: utter_ask_anything_else  
 - story: emvolimh able
   steps:
   - intent: am_i_able_emvolimh

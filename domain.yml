@@ -27,6 +27,8 @@ intents:
     use_entities: true
 - which_courses_are_offered_in_emvolimh:
     use_entities: true
+- how_many_dm_have_i:
+    use_entities: true
 entities:
 - yphresia
 - ypeuthynos
@@ -52,6 +54,9 @@ responses:
   utter_ask_dm_diplwmatikh:
   - text: |
       Έχεις συμπληρώσει 210 Δ.Μ; Αν δεν γνωρίζεις, τότε μπορείς να μάθεις σε αυτό το σύνδεσμο https://www.iee.ihu.gr/ects160/
+  utter_how_many_dm_have_i:
+  - text: |
+      Μπορείς να μάθεις πόσες διδακτικές μονάδες εχεις σε αυτό το σύνδεσμο https://www.iee.ihu.gr/ects160/      
   utter_able_ptyxiakh:
   - text: |
       Ναι! Μπορείς να αναλάβεις πτυχιακή.
@@ -80,6 +85,7 @@ actions:
 - utter_unable_diplwmatikh
 - utter_able_ptyxiakh
 - utter_unable_ptyxiakh
+- utter_how_many_dm_have_i
 - utter_ability_for_emvolimh
 - utter_courses_offered_in_emvolimh
 - action_resolve_issue
