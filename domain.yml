@@ -25,6 +25,8 @@ intents:
     use_entities: true
 - password_recovery:
     use_entities: true
+- which_courses_are_offered_in_emvolimh:
+    use_entities: true
 entities:
 - yphresia
 - ypeuthynos
@@ -65,6 +67,9 @@ responses:
   utter_ability_for_emvolimh:
   - text: |
       Προϋπόθεση για την συμμετάσχει κανείς στην εμβόλιμη εξέταση ενός μαθήματος είναι να το έχει δηλώσει τουλάχιστον μια φορά στο παρελθόν και να έχει συμπληρώσει τουλάχιστον 160 ΠΜ.
+  utter_courses_offered_in_emvolimh:
+  - text: |
+      Τα μαθήματα που προσφέρονται στην εμβόλιμη εξεταστική μπορείτε να τα βρείτε σε αυτο το συνδεσμο https://www.iee.ihu.gr/ects160/courses.html    Κατά κανόνα στις εμβόλιμες εξεταστικές προσφέρονται ολα τα μαθήματα κορμού και όλα τα μαθήματα που είναι υποχρεωτικά στις ομάδες μαθημάτων.     
 actions:
 - '...'
 - utter_greet_and_ask
@@ -76,6 +81,7 @@ actions:
 - utter_able_ptyxiakh
 - utter_unable_ptyxiakh
 - utter_ability_for_emvolimh
+- utter_courses_offered_in_emvolimh
 - action_resolve_issue
 - action_in_charge_of_service
 - action_password_recovery

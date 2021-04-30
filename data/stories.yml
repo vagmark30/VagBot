@@ -42,6 +42,11 @@ stories:
   - intent: am_i_able_emvolimh
   - action: utter_ability_for_emvolimh
   - action: utter_ask_anything_else
+- story: emvolimh courses
+  steps:
+  - intent: which_courses_are_offered_in_emvolimh
+  - action: utter_courses_offered_in_emvolimh
+  - action: utter_ask_anything_else  
 - story: problem with service
   steps:
   - intent: having_issue_with_a_service
