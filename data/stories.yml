@@ -8,43 +8,52 @@ stories:
   steps:
   - intent: bot_challenge
   - action: utter_i_am_bot
+  - action: utter_ask_anything_else
 - story: ptyxiakh able
   steps:
   - intent: am_i_able_ptyxiakh
   - action: utter_ask_dm_ptyxiakh
   - intent: affirm
   - action: utter_able_ptyxiakh
+  - action: utter_ask_anything_else
 - story: ptyxiakh unable
   steps:
   - intent: am_i_able_ptyxiakh
   - action: utter_ask_dm_ptyxiakh
   - intent: deny
   - action: utter_unable_ptyxiakh
+  - action: utter_ask_anything_else
 - story: diplwmatikh able
   steps:
   - intent: am_i_able_diplwmatikh
   - action: utter_ask_dm_diplwmatikh
   - intent: affirm
   - action: utter_able_diplwmatikh
+  - action: utter_ask_anything_else
 - story: diplwmatikh unable
   steps:
   - intent: am_i_able_diplwmatikh
   - action: utter_ask_dm_diplwmatikh
   - intent: deny
   - action: utter_unable_diplwmatikh
+  - action: utter_ask_anything_else
 - story: emvolimh able
   steps:
   - intent: am_i_able_emvolimh
   - action: utter_ability_for_emvolimh
+  - action: utter_ask_anything_else
 - story: problem with service
   steps:
   - intent: having_issue_with_a_service
   - action: action_resolve_issue
+  - action: utter_ask_anything_else
 - story: who is in charge of a service
   steps:
   - intent: in_charge_of_service
   - action: action_in_charge_of_service
+  - action: utter_ask_anything_else
 - story: password recovery
   steps:
   - intent: password_recovery
   - action: action_password_recovery
+  - action: utter_ask_anything_else

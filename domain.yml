@@ -37,7 +37,10 @@ slots:
 responses:
   utter_greet_and_ask:
   - text: |
-      Γειά! Πως μπορώ να βοηθήσω?
+      Γειά! Πως μπορώ να βοηθήσω;
+  utter_ask_anything_else:
+  - text: |
+      Υπάρχει κάτι άλλο στο οποίο μπορώ να σας βοηθήσω;      
   utter_i_am_bot:
   - text: |
       Είμαι ενα Chatμποτ
