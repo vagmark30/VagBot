@@ -91,6 +91,7 @@ nlu:
     - Ποιός ειναι υπευθυνος για το [μειλ]{"entity": "yphresia", "value": "webmail"}
 - intent: password_recovery
   examples: |
+    - Έχω ξεχάσει τον κωδικό μου στο [αππς]{"entity": "yphresia", "value": "apps"}
     - Έχω ξεχάσει τον κωδικό μου στο [μοοδλε]{"entity": "yphresia", "value": "moodle"}
     - Έχω ξεχάσει τον κωδικό μου στο [eudoxo]{"entity": "yphresia", "value": "eudoxos"}
     - Έχω ξεχάσει τον κωδικό μου στο [πυθια]{"entity": "yphresia", "value": "pithia"}
@@ -100,6 +101,7 @@ nlu:
     - Έχω ξεχάσει τον κωδικό μου στο [vpn](yphresia)
     - Έχω ξεχάσει τον κωδικό μου στο [academicid](yphresia)
     - Έχω ξεχάσει τον κωδικό μου στο [eduroam](yphresia)
+    - Ανάκτηση κωδικού [apps]{"entity": "yphresia", "value": "apps"}    
     - Ανάκτηση κωδικού [μοοντλ]{"entity": "yphresia", "value": "moodle"}
     - Ανάκτηση κωδικού [Ευδοξο]{"entity": "yphresia", "value": "eudoxos"}
     - Ανάκτηση κωδικού [pithia](yphresia)
