@@ -2,6 +2,29 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+import mysql.connector
+
+class GetProfInfo(Action):
+    def name(self) -> Text:
+        return "action_get_professor_info"
+    def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        mydb = mysql.connector.connect(user='vagbot', 
+                                       password='Vagbot123',
+                                       host='localhost',
+                                       database='vagbot')
+        mycursor = mydb.cursor()
+        professor = next(tracker.get_latest_entity_values('professor'), None)
+        print(professor)
+        query = "SELECT mail FROM courseinfo where prof = %s"
+        name = (str(professor),)
+
+        mycursor.execute(query, name)
+        myresult = mycursor.fetchone()
+        strg = 'Ο/Η κ.' +str(professor)+' δέχεται email στο: ' +str(myresult[0])
+        
+        dispatcher.utter_message(strg)
+        mydb.close()        
+        return []
 
 class ResolveIssue(Action):
     
