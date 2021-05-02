@@ -81,3 +81,8 @@ stories:
   - intent: deny
   - action: utter_problem_as_non_registred_on_apps
   - action: utter_ask_anything_else
+- story: professor info
+  steps:
+  - intent: whats_the_professors_info
+  - action: action_get_professor_info
+  - action: utter_ask_anything_else  
