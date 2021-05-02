@@ -31,9 +31,11 @@ intents:
     use_entities: true
 - problem_with_apps:
     use_entities: true
+- whats_the_professors_info:
+    use_entities: true
 entities:
 - yphresia
-- ypeuthynos
+- professor
 slots:
   yphresia:
     type: rasa.shared.core.slots.TextSlot
@@ -105,5 +107,6 @@ actions:
 - action_resolve_issue
 - action_in_charge_of_service
 - action_password_recovery
+- action_get_professor_info
 forms: {}
 e2e_actions: []
