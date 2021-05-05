@@ -1,19 +1,23 @@
 # Working on an assistant for iee ihu
 ![alt text](https://www.vital-agro.gr/wp-content/uploads/2020/05/ihu-en-logo-created20191112a-e1588509306304.png)
 
+```
+Available topics
+```
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhTopics.png)
 
 ```
-Latest commit
-Entity Recognition and Slot Filling
+Entity recognition on any professor and custom search on mysql
 ```
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoEntityRecognitionWithSlotFilling.png)
-
-
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhActionMysql.png)
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhInfoIncharge.png)
 
 ```
-Current state of the chatbot
+Demo dilplwmatikh
 ```
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhDialog.png)
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhDiplwmatikh.png)
 
-
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoPtyxiakhDialog.png)
+```
+Demo emvolimh
+```
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhEmvolimh.png)
