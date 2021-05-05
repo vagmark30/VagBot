@@ -9,6 +9,10 @@ stories:
   - intent: bot_challenge
   - action: utter_i_am_bot
   - action: utter_ask_anything_else
+- story: covered topics
+  steps:
+  - intent: which_topics_are_covered
+  - action: utter_covered_topics
 - story: ptyxiakh able
   steps:
   - intent: am_i_able_ptyxiakh
