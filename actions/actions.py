@@ -15,12 +15,19 @@ class GetProfInfo(Action):
         mycursor = mydb.cursor()
         professor = next(tracker.get_latest_entity_values('professor'), None)
         print(professor)
-        query = "SELECT mail FROM courseinfo where prof = %s"
-        name = (str(professor),)
-
-        mycursor.execute(query, name)
+        profName=str(professor)
+        profNameCut=profName[:-1]
+        profNameSqlReady=profNameCut.replace("ι","_").replace("η","_").replace("υ","_")
+        print(profNameSqlReady)        
+        query = "SELECT prof,mail FROM courseinfo where UPPER(prof) LIKE UPPER('%"+profNameSqlReady+"%')"
+        print(query)
+        mycursor.execute(query)
         myresult = mycursor.fetchone()
-        strg = 'Ο/Η κ.' +str(professor)+' δέχεται email στο: ' +str(myresult[0])
+        print(myresult)
+        if(myresult is not None):
+            strg = 'Ο/Η κ.' +str(myresult[0])+' δέχεται email στο: ' +str(myresult[1])
+        else:
+            strg = 'Δεν βρεθηκε ο προφεσορασ'
         
         dispatcher.utter_message(strg)
         mydb.close()        
