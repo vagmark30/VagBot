@@ -43,6 +43,48 @@ class GetProfInfo(Action):
         mydb.close()        
         return []
 
+class GetProfCourses(Action):
+    def name(self) -> Text:
+        return "action_get_professor_courses"
+    def run(self, dispatcher: CollectingDispatcher,tracker: Tracker,domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        mydb = mysql.connector.connect(user='vagbot', 
+                                       password='Vagbot123',
+                                       host='localhost',
+                                       database='vagbot')
+        mycursor = mydb.cursor()
+        professor = next(tracker.get_latest_entity_values('professor'), None)
+        profName=str(professor)
+        profNameCut=profName[:-1]
+        #   \ = line continuation
+        profNameSqlReady=profNameCut.replace("ι","_")\
+                                    .replace("η","_")\
+                                    .replace("υ","_")\
+                                    .replace("ο","_")\
+                                    .replace("ω","_")\
+                                    .replace("νν","ν%")\
+                                    .replace("λλ","λ%")\
+                                    .replace("μμ","μ%")\
+                                    .replace("ππ","π%")\
+                                    .replace("κκ","κ%")\
+                                    .replace("σσ","σ%")\
+                                    .replace("ττ","τ%")\
+                                    .replace("γγ","γ%")\
+                                    .replace("γκ","γ%")       
+        query = "SELECT prof,name,type FROM courseinfo where UPPER(prof) LIKE UPPER('%"+profNameSqlReady+"%')"
+        mycursor.execute(query)
+        myresult = mycursor.fetchall()
+        if(myresult is not None):
+            courseNames=""
+            for i in myresult:
+                courseNames+="\n- "+str(i[1]) +" "+str(i[2])+" \n"
+            strg = 'Τα μαθήματα που διδάσκει ο/η κ.' +str(myresult[0][0])+' είναι τα: ' +courseNames
+        else:
+            strg = 'Δεν βρεθηκε ο προφεσορασ'
+        
+        dispatcher.utter_message(strg)
+        mydb.close()        
+        return []        
+
 class ResolveIssue(Action):
     
     def name(self) -> Text:
