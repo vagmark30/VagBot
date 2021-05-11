@@ -94,4 +94,9 @@ stories:
   steps:
   - intent: which_courses_by_professor
   - action: action_get_professor_courses
-  - action: utter_ask_anything_else    
+  - action: utter_ask_anything_else
+- story: exams schedule
+  steps:
+  - intent: exams_schedule
+  - action: utter_exams_schedule
+  - action: utter_ask_anything_else        
