@@ -37,7 +37,7 @@ class GetProfInfo(Action):
         if(myresult is not None):
             strg = 'Ο/Η κ.' +str(myresult[0])+' δέχεται email στο: ' +str(myresult[1])
         else:
-            strg = 'Δεν βρεθηκε ο προφεσορασ'
+            strg = 'Δεν βρέθηκαν αποτελέσματα για το όνομα που δώσατε.'
         
         dispatcher.utter_message(strg)
         mydb.close()        
@@ -73,13 +73,13 @@ class GetProfCourses(Action):
         query = "SELECT prof,name,type FROM courseinfo where UPPER(prof) LIKE UPPER('%"+profNameSqlReady+"%')"
         mycursor.execute(query)
         myresult = mycursor.fetchall()
-        if(myresult is not None):
+        if(len(myresult)!=0):
             courseNames=""
             for i in myresult:
                 courseNames+="\n- "+str(i[1]) +" "+str(i[2])+" \n"
             strg = 'Τα μαθήματα που διδάσκει ο/η κ.' +str(myresult[0][0])+' είναι τα: ' +courseNames
         else:
-            strg = 'Δεν βρεθηκε ο προφεσορασ'
+            strg = 'Δεν βρέθηκαν αποτελέσματα για το όνομα που δώσατε.'
         
         dispatcher.utter_message(strg)
         mydb.close()        
