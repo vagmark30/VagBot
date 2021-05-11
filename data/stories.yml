@@ -89,4 +89,9 @@ stories:
   steps:
   - intent: whats_the_professors_info
   - action: action_get_professor_info
-  - action: utter_ask_anything_else  
+  - action: utter_ask_anything_else
+- story: professor courses
+  steps:
+  - intent: which_courses_by_professor
+  - action: action_get_professor_courses
+  - action: utter_ask_anything_else    
