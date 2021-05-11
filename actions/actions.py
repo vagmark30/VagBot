@@ -14,16 +14,26 @@ class GetProfInfo(Action):
                                        database='vagbot')
         mycursor = mydb.cursor()
         professor = next(tracker.get_latest_entity_values('professor'), None)
-        print(professor)
         profName=str(professor)
         profNameCut=profName[:-1]
-        profNameSqlReady=profNameCut.replace("ι","_").replace("η","_").replace("υ","_")
-        print(profNameSqlReady)        
+        #   \ = line continuation
+        profNameSqlReady=profNameCut.replace("ι","_")\
+                                    .replace("η","_")\
+                                    .replace("υ","_")\
+                                    .replace("ο","_")\
+                                    .replace("ω","_")\
+                                    .replace("νν","ν%")\
+                                    .replace("λλ","λ%")\
+                                    .replace("μμ","μ%")\
+                                    .replace("ππ","π%")\
+                                    .replace("κκ","κ%")\
+                                    .replace("σσ","σ%")\
+                                    .replace("ττ","τ%")\
+                                    .replace("γγ","γ%")\
+                                    .replace("γκ","γ%")       
         query = "SELECT prof,mail FROM courseinfo where UPPER(prof) LIKE UPPER('%"+profNameSqlReady+"%')"
-        print(query)
         mycursor.execute(query)
         myresult = mycursor.fetchone()
-        print(myresult)
         if(myresult is not None):
             strg = 'Ο/Η κ.' +str(myresult[0])+' δέχεται email στο: ' +str(myresult[1])
         else:
