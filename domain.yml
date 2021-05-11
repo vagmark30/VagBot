@@ -35,6 +35,8 @@ intents:
     use_entities: true
 - whats_the_professors_info:
     use_entities: true
+- which_courses_by_professor:
+    use_entities: true
 entities:
 - yphresia
 - professor
@@ -121,5 +123,6 @@ actions:
 - action_in_charge_of_service
 - action_password_recovery
 - action_get_professor_info
+- action_get_professor_courses
 forms: {}
 e2e_actions: []
