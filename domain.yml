@@ -39,6 +39,10 @@ intents:
     use_entities: true
 - exams_schedule:
     use_entities: true
+- nlu_fallback:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
 entities:
 - yphresia
 - professor
@@ -58,6 +62,10 @@ responses:
   utter_i_am_bot:
   - text: |
       Είμαι ενα Chatμποτ
+  utter_out_of_scope:
+  - text: Συγγνώμη αλλά δεν μπορώ να απαντήσω σε αυτήν την ερώτηση.
+  utter_please_rephrase:
+  - text: Συγγνώμη αλλά δεν κατάλαβα, μπορείτε να επαναλάβετε την ερώτηση σας;
   utter_covered_topics:
   - text: |
       Τα θέματα που καλύπτονται και μπορώ να βοηθήσω είναι:
@@ -120,6 +128,8 @@ actions:
 - '...'
 - utter_greet_and_ask
 - utter_i_am_bot
+- utter_out_of_scope
+- utter_please_rephrase
 - utter_ask_dm_ptyxiakh
 - utter_ask_dm_diplwmatikh
 - utter_able_diplwmatikh
