@@ -2,663 +2,220 @@ version: "2.0"
 nlu:
 - intent: whats_the_professors_info
   examples: |
-    - ποιο ειναι mail [Ουγιάρογλου Στέφανος](professor)
-    - ψαχνω ποιο ειναι email [Κιοσκερίδης Ιορδάνης](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Ηλιούδης Χρήστος](professor)
-    - ψαχνω ποιο ειναι μειλ [Αδαμίδης Παναγιώτης](professor)
-    - ψαχνω ποιο ειναι email [Τσιακμάκης Κυριάκος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Παπαδοπούλου Μαρία](professor)
-    - ποιο ειναι email [Σαρηγιαννίδης Αντώνης](professor)
-    - ποιο ειναι μαιλ [Δημητριάδης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Τσιακμάκης Κυριάκος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Δημητριάδης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Γουλιάνας Κων/νος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Τσιακμάκης Κυριάκος](professor)
-    - ψαχνω ποιο ειναι email [Μπαλτατζής Δημήτριος](professor)
-    - ψαχνω ποιο ειναι email [Μαρμόρκος Ιωάννης](professor)
-    - ποιο ειναι mail [Αγγέλου Κωνσταντίνος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Σαρηγιαννίδης Αντώνης](professor)
-    - ψαχνω ποιο ειναι mail [Κιοσκερίδης Ιορδάνης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Αβδελίδης Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι mail [Διαμαντάρας Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι μειλ [Δέρβος Δημήτριος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Αδαμίδης Παναγιώτης](professor)
-    - ψαχνω ποιο ειναι μαιλ [Τεκτονίδης Δημήτρης](professor)
-    - ποιο ειναι μειλ [Ηλιούδης Χρήστος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Αβδελίδης Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Κωτσάκης Ρήγας](professor)
-    - ποιο ειναι email [Ουγιάρογλου Στέφανος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Χατζημίσιος Περικλής](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Αβδελίδης Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι mail [Τσιακμάκης Κυριάκος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Μανάβης Χρήστος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Καπλάνογλου Παντελής](professor)
-    - ποιο ειναι email [Παπακώστας Δημήτριος](professor)
-    - ψαχνω ποιο ειναι μειλ [Τοκατλίδης Χρήστος](professor)
-    - ψαχνω ποιο ειναι email [Αβδελίδης Κωνσταντίνος](professor)
-    - ποιο ειναι μαιλ [Μπάμνιος Γεώργιος](professor)
-    - ποιο ειναι mail [Αντωνίου Στάθης](professor)
-    - ποιο ειναι μαιλ [Αμανατιάδης Δημήτριος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Δεληγιάννης Ιγνάτιος](professor)
-    - ποιο ειναι μαιλ [Αλεξούδη Θεονίτσα](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Μαρμόρκος Ιωάννης](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Γιακουμής Άγγελος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Κώστογλου Βασίλειος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Αμπατζής Ζαφείριος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Βάσσιος Βασίλειος](professor)
-    - ποιο ειναι mail [Αλεξούδη Θεονίτσα](professor)
-    - ψαχνω ποιο ειναι mail [Κωτσάκης Ρήγας](professor)
-    - ψαχνω ποιο ειναι mail [Κασδερίδης Ευστάθιος](professor)
-    - ποιο ειναι μαιλ [Χατζημίσιος Περικλής](professor)
-    - ψαχνω ποιο ειναι μειλ [Αμανατιάδης Δημήτριος](professor)
-    - ψαχνω ποιο ειναι email [Τοκατλίδης Χρήστος](professor)
-    - ποιο ειναι μειλ [Σαπουνίδης Θεοδόσης](professor)
-    - ψαχνω ποιο ειναι email [Ουγιάρογλου Στέφανος](professor)
-    - ψαχνω ποιο ειναι email [Μανάβης Χρήστος](professor)
-    - ποιο ειναι μαιλ [Σαλαμπάσης Μιχαήλ](professor)
-    - ποιο ειναι μειλ [Χατζόπουλος Αργύριος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Κιοσκερίδης Ιορδάνης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Τσιρογιάννης Ανδρέας](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Τοκατλίδης Χρήστος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Χατζόπουλος Αργύριος](professor)
-    - ποιο ειναι μαιλ [Ιωαννίδου Μελίνα](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Ασδρέ Κατερίνα](professor)
-    - ψαχνω ποιο ειναι μειλ [Δεληγιάννης Ιγνάτιος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Σαλαμπάσης Μιχαήλ](professor)
-    - ψαχνω ποιο ειναι email [Αλεξούδη Θεονίτσα](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Βίτσας Βασίλειος](professor)
-    - ποιο ειναι μαιλ [Μπαλτατζής Δημήτριος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Καζακόπουλος Αριστοτέλης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Σαπουνίδης Θεοδόσης](professor)
-    - ποιο ειναι μειλ [Αδαμίδης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Σαλαμπάσης Μιχαήλ](professor)
-    - ψαχνω ποιο ειναι email [Δεληγιάννης Ιγνάτιος](professor)
-    - ποιο ειναι mail [Τζέκης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Αντωνίου Στάθης](professor)
-    - ποιο ειναι μειλ [Καπλάνογλου Παντελής](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Παπαδοπούλου Μαρία](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Αδαμίδης Παναγιώτης](professor)
-    - ποιο ειναι μειλ [Καζακόπουλος Αριστοτέλης](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Καπλάνογλου Παντελής](professor)
-    - ψαχνω ποιο ειναι email [Σαλαμπάσης Μιχαήλ](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Βάσσιος Βασίλειος](professor)
-    - ψαχνω ποιο ειναι mail [Ιωαννίδου Μελίνα](professor)
-    - ψαχνω ποιο ειναι email [Σαπουνίδης Θεοδόσης](professor)
-    - ποιο ειναι μειλ [Χατζημίσιος Περικλής](professor)
-    - ποιο ειναι μειλ [Τσιρογιάννης Ανδρέας](professor)
-    - ποιο ειναι μειλ [Σιδηρόπουλος Αντώνιος](professor)
-    - ψαχνω ποιο ειναι μειλ [Μπαλτατζής Δημήτριος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Τσελεγκαρίδης Σωκράτης](professor)
-    - ποιο ειναι μειλ [Αμανατιάδης Δημήτριος](professor)
-    - ποιο ειναι email [Διαμαντάρας Κωνσταντίνος](professor)
-    - ποιο ειναι mail [Αμπατζής Ζαφείριος](professor)
-    - ψαχνω ποιο ειναι mail [Αμανατιάδης Δημήτριος](professor)
-    - ποιο ειναι μειλ [Κιοσκερίδης Ιορδάνης](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Χατζημίσιος Περικλής](professor)
-    - ποιο ειναι mail [Βίτσας Βασίλειος](professor)
-    - ποιο ειναι mail [Μανάβης Χρήστος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Ηλιούδης Χρήστος](professor)
-    - ψαχνω ποιο ειναι email [Δημητριάδης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Κασδερίδης Ευστάθιος](professor)
-    - ψαχνω ποιο ειναι mail [Παπακώστας Δημήτριος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Καπλάνογλου Παντελής](professor)
-    - ψαχνω ποιο ειναι mail [Τοκατλίδης Χρήστος](professor)
-    - ψαχνω ποιο ειναι email [Λαμπρόπουλος Γεωργιος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Παπαδοπούλου Μαρία](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Γουλιάνας Κων/νος](professor)
-    - ψαχνω ποιο ειναι mail [Χατζόπουλος Αργύριος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Αδαμίδης Παναγιώτης](professor)
-    - ποιο ειναι μειλ [Μαρμόρκος Ιωάννης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Διαμαντάρας Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι email [Καζακόπουλος Αριστοτέλης](professor)
-    - ψαχνω ποιο ειναι mail [Μαρμόρκος Ιωάννης](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Σαρηγιαννίδης Αντώνης](professor)
-    - ποιο ειναι μειλ [Διαμαντάρας Κωνσταντίνος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Μπαλτατζής Δημήτριος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Παπακώστας Δημήτριος](professor)
-    - ποιο ειναι email [Αλεξούδη Θεονίτσα](professor)
-    - ποιο ειναι email [Κώστογλου Βασίλειος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Χατζημίσιος Περικλής](professor)
-    - ψαχνω ποιο ειναι μειλ [Διαμαντάρας Κωνσταντίνος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Τσιακμάκης Κυριάκος](professor)
-    - ψαχνω ποιο ειναι mail [Δελημαράς Βασίλειος](professor)
-    - ποιο ειναι μειλ [Αρβανίτου Ελβίρα Μαρία](professor)
-    - ποιο ειναι μαιλ [Τεκτονίδης Δημήτρης](professor)
-    - ποιο ειναι email [Αμανατιάδης Δημήτριος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Παπαδοπούλου Μαρία](professor)
-    - ψαχνω ποιο ειναι μαιλ [Τζέκης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Σπάσος Μιχαήλ](professor)
-    - ψαχνω ποιο ειναι μαιλ [Δημητριάδης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Δημητριάδης Παναγιώτης](professor)
-    - ποιο ειναι email [Καλλιδοπούλου Άννα-Ελένη](professor)
-    - ποιο ειναι email [Σαλαμπάσης Μιχαήλ](professor)
-    - ποιο ειναι μαιλ [Τσελεγκαρίδης Σωκράτης](professor)
-    - ποιο ειναι email [Μπαλτατζής Δημήτριος](professor)
-    - ποιο ειναι μαιλ [Ασδρέ Κατερίνα](professor)
-    - ποιο ειναι email [Τσιριγώτης Γεώργιος](professor)
-    - ψαχνω ποιο ειναι email [Βίτσας Βασίλειος](professor)
-    - ψαχνω ποιο ειναι μειλ [Τσιρογιάννης Ανδρέας](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Δέρβος Δημήτριος](professor)
-    - ψαχνω ποιο ειναι email [Κασδερίδης Ευστάθιος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Χρυσογιάννη Εύα](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Ιωσηφίδης Αθανάσιος](professor)
-    - ποιο ειναι mail [Χατζημίσιος Περικλής](professor)
-    - ψαχνω ποιο ειναι μαιλ [Αλεξούδη Θεονίτσα](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Καλλιδοπούλου Άννα-Ελένη](professor)
-    - ψαχνω ποιο ειναι email [Κωτσάκης Ρήγας](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Μπάμνιος Γεώργιος](professor)
-    - ποιο ειναι mail [Αρβανίτου Ελβίρα Μαρία](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Δημητριάδης Παναγιώτης](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Τσιριγώτης Γεώργιος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Λαμπρόπουλος Γεωργιος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Τσιρογιάννης Ανδρέας](professor)
-    - ψαχνω ποιο ειναι mail [Ιωσηφίδης Αθανάσιος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Κιοσκερίδης Ιορδάνης](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Γιακουμής Άγγελος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Κασδερίδης Ευστάθιος](professor)
-    - ποιο ειναι email [Χρυσογιάννη Εύα](professor)
-    - ποιο ειναι email [Γουλιάνας Κων/νος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Κασδερίδης Ευστάθιος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Σιδηρόπουλος Αντώνιος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Διαμαντάρας Κωνσταντίνος](professor)
-    - ποιο ειναι μαιλ [Σιδηρόπουλος Αντώνιος](professor)
-    - ποιο ειναι mail [Διαμαντάρας Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι μειλ [Παπαδοπούλου Μαρία](professor)
-    - ποιο ειναι mail [Τσιρογιάννης Ανδρέας](professor)
-    - ψαχνω ποιο ειναι μαιλ [Σαρηγιαννίδης Αντώνης](professor)
-    - ψαχνω ποιο ειναι μαιλ [Αμανατιάδης Δημήτριος](professor)
-    - ψαχνω ποιο ειναι μειλ [Μαρμόρκος Ιωάννης](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Δέρβος Δημήτριος](professor)
-    - ποιο ειναι μειλ [Ασδρέ Κατερίνα](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Αβδελίδης Κωνσταντίνος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Δελημαράς Βασίλειος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Τσιριγώτης Γεώργιος](professor)
-    - ψαχνω ποιο ειναι mail [Μανάβης Χρήστος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Γιακουμής Άγγελος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Μανάβης Χρήστος](professor)
-    - ποιο ειναι mail [Κωτσάκης Ρήγας](professor)
-    - ποιο ειναι mail [Κώστογλου Βασίλειος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Μαρμόρκος Ιωάννης](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Μπαλτατζής Δημήτριος](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Αλεξούδη Θεονίτσα](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Αγγέλου Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι email [Ασδρέ Κατερίνα](professor)
-    - ψαχνω ποιο ειναι μειλ [Σπάσος Μιχαήλ](professor)
-    - ψαχνω ποιο ειναι μαιλ [Ουγιάρογλου Στέφανος](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Αντωνίου Στάθης](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Ηλιούδης Χρήστος](professor)
-    - βοηθησε με να βρω ποιο ειναι email [Τοκατλίδης Χρήστος](professor)
-    - ποιο ειναι email [Αβδελίδης Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι mail [Τσιρογιάννης Ανδρέας](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Μαρμόρκος Ιωάννης](professor)
-    - ποιο ειναι email [Αδαμίδης Παναγιώτης](professor)
-    - ποιο ειναι mail [Αμανατιάδης Δημήτριος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Βίτσας Βασίλειος](professor)
-    - βοηθησε με να βρω ποιο ειναι mail [Μπαλτατζής Δημήτριος](professor)
-    - ποιο ειναι mail [Σαλαμπάσης Μιχαήλ](professor)
-    - βοηθησε με να βρω ποιο ειναι μειλ [Αγγέλου Κωνσταντίνος](professor)
-    - ποιο ειναι μαιλ [Αβδελίδης Κωνσταντίνος](professor)
-    - ψαχνω ποιο ειναι μαιλ [Τσελεγκαρίδης Σωκράτης](professor)
-    - βοηθησε με να βρω ποιο ειναι μαιλ [Τζέκης Παναγιώτης](professor)
-    - ψαχνω ποιο ειναι mail [Δεληγιάννης Ιγνάτιος](professor)
-    - ψαχνω ποιο ειναι email [Κεραμόπουλος Ευκλείδης](professor)
-    - μειλ [Σαλαμπάσης Μιχαήλ](professor)
-    - μειλ [Κώστογλου Βασίλειος](professor)
-    - μαιλ [Ιωσηφίδης Αθανάσιος](professor)
-    - μαιλ [Σαλαμπάσης Μιχαήλ](professor)
-    - μειλ [Χατζημίσιος Περικλής](professor)
-    - μειλ [Τσιακμάκης Κυριάκος](professor)
-    - email [Καπλάνογλου Παντελής](professor)
-    - μαιλ [Αδαμίδης Παναγιώτης](professor)
-    - μαιλ [Παπαδοπούλου Μαρία](professor)
-    - μαιλ [Κεραμόπουλος Ευκλείδης](professor)
-    - mail [Γουλιάνας Κων/νος](professor)
-    - μαιλ [Παπακώστας Δημήτριος](professor)
-    - mail [Κεραμόπουλος Ευκλείδης](professor)
-    - μειλ [Κιοσκερίδης Ιορδάνης](professor)
-    - μειλ [Τεκτονίδης Δημήτρης](professor)
-    - μειλ [Σαρηγιαννίδης Αντώνης](professor)
-    - email [Τσελεγκαρίδης Σωκράτης](professor)
-    - email [Αμανατιάδης Δημήτριος](professor)
-    - email [Χρυσογιάννη Εύα](professor)
-    - email [Ιωσηφίδης Αθανάσιος](professor)
-    - μαιλ [Τοκατλίδης Χρήστος](professor)
-    - email [Τσιρογιάννης Ανδρέας](professor)
-    - mail [Αντωνίου Στάθης](professor)
-    - μαιλ [Καζακόπουλος Αριστοτέλης](professor)
-    - email [Μαρμόρκος Ιωάννης](professor)
-    - μειλ [Μπάμνιος Γεώργιος](professor)
-    - email [Καλλιδοπούλου Άννα-Ελένη](professor)
-    - μειλ [Αρβανίτου Ελβίρα Μαρία](professor)
-    - mail [Αδαμίδης Παναγιώτης](professor)
-    - mail [Αμανατιάδης Δημήτριος](professor)
-    - μαιλ [Αμανατιάδης Δημήτριος](professor)
-    - μειλ [Αντωνίου Στάθης](professor)
-    - email [Τσιριγώτης Γεώργιος](professor)
-    - μαιλ [Τσιρογιάννης Ανδρέας](professor)
-    - mail [Μαρμόρκος Ιωάννης](professor)
-    - μειλ [Παπαδοπούλου Μαρία](professor)
-    - μαιλ [Δέρβος Δημήτριος](professor)
-    - mail [Χρυσογιάννη Εύα](professor)
-    - mail [Αλεξούδη Θεονίτσα](professor)
-    - mail [Μανάβης Χρήστος](professor)
-    - mail [Βίτσας Βασίλειος](professor)
-    - μειλ [Αμανατιάδης Δημήτριος](professor)
-    - μειλ [Αγγέλου Κωνσταντίνος](professor)
-    - μαιλ [Αγγέλου Κωνσταντίνος](professor)
-    - μειλ [Χρυσογιάννη Εύα](professor)
-    - μαιλ [Σπάσος Μιχαήλ](professor)
-    - μειλ [Τσιριγώτης Γεώργιος](professor)
-    - mail [Ιωαννίδου Μελίνα](professor)
-    - email [Αδαμίδης Παναγιώτης](professor)
-    - mail [Τσιριγώτης Γεώργιος](professor)
-    - mail [Δελημαράς Βασίλειος](professor)
-    - mail [Χατζημίσιος Περικλής](professor)
-    - email [Σπάσος Μιχαήλ](professor)
-    - email [Μπαλτατζής Δημήτριος](professor)
-    - mail [Αβδελίδης Κωνσταντίνος](professor)
-    - μειλ [Σπάσος Μιχαήλ](professor)
-    - mail [Καπλάνογλου Παντελής](professor)
-    - mail [Αγγέλου Κωνσταντίνος](professor)
-    - μειλ [Δέρβος Δημήτριος](professor)
-    - email [Γιακουμής Άγγελος](professor)
-    - email [Γουλιάνας Κων/νος](professor)
-    - mail [Σαλαμπάσης Μιχαήλ](professor)
-    - mail [Ασδρέ Κατερίνα](professor)
-    - μειλ [Αδαμίδης Παναγιώτης](professor)
-    - μειλ [Βίτσας Βασίλειος](professor)
-    - μαιλ [Καπλάνογλου Παντελής](professor)
-    - μαιλ [Λαμπρόπουλος Γεωργιος](professor)
-    - mail [Αρβανίτου Ελβίρα Μαρία](professor)
-    - μειλ [Τσιρογιάννης Ανδρέας](professor)
-    - email [Διαμαντάρας Κωνσταντίνος](professor)
-    - email [Δέρβος Δημήτριος](professor)
-    - μαιλ [Τζέκης Παναγιώτης](professor)
-    - mail [Τσιρογιάννης Ανδρέας](professor)
-    - μαιλ [Γιακουμής Άγγελος](professor)
-    - email [Παπαδοπούλου Μαρία](professor)
-    - μαιλ [Μπαλτατζής Δημήτριος](professor)
-    - email [Ηλιούδης Χρήστος](professor)
-    - email [Κώστογλου Βασίλειος](professor)
-    - email [Κωτσάκης Ρήγας](professor)
-    - μειλ [Δελημαράς Βασίλειος](professor)
-    - μειλ [Βάσσιος Βασίλειος](professor)
-    - μαιλ [Ουγιάρογλου Στέφανος](professor)
-    - μαιλ [Τσιριγώτης Γεώργιος](professor)
-    - mail [Σιδηρόπουλος Αντώνιος](professor)
-    - μειλ [Παπακώστας Δημήτριος](professor)
-    - email [Τσιακμάκης Κυριάκος](professor)
-    - μαιλ [Αρβανίτου Ελβίρα Μαρία](professor)
-    - mail [Διαμαντάρας Κωνσταντίνος](professor)
-    - μειλ [Αμπατζής Ζαφείριος](professor)
-    - email [Σαλαμπάσης Μιχαήλ](professor)
-    - mail [Κιοσκερίδης Ιορδάνης](professor)
-    - μειλ [Τσελεγκαρίδης Σωκράτης](professor)
-    - μειλ [Διαμαντάρας Κωνσταντίνος](professor)
-    - mail [Τσελεγκαρίδης Σωκράτης](professor)
-    - μειλ [Κεραμόπουλος Ευκλείδης](professor)
-    - μαιλ [Μανάβης Χρήστος](professor)
-    - μαιλ [Αντωνίου Στάθης](professor)
-    - μειλ [Χατζόπουλος Αργύριος](professor)
-    - email [Αμπατζής Ζαφείριος](professor)
-    - μαιλ [Χατζόπουλος Αργύριος](professor)
-    - [Σπάσος Μιχαήλ](professor) μαιλ
-    - [Δεληγιάννης Ιγνάτιος](professor) mail
-    - [Μπάμνιος Γεώργιος](professor) mail
-    - [Αμανατιάδης Δημήτριος](professor) email
-    - [Χατζόπουλος Αργύριος](professor) email
-    - [Ιωαννίδου Μελίνα](professor) μαιλ
-    - [Χατζόπουλος Αργύριος](professor) mail
-    - [Βάσσιος Βασίλειος](professor) mail
-    - [Τοκατλίδης Χρήστος](professor) μαιλ
-    - [Καπλάνογλου Παντελής](professor) μαιλ
-    - [Αδαμίδης Παναγιώτης](professor) μειλ
-    - [Τσιρογιάννης Ανδρέας](professor) μαιλ
-    - [Κώστογλου Βασίλειος](professor) mail
-    - [Δελημαράς Βασίλειος](professor) mail
-    - [Γουλιάνας Κων/νος](professor) μειλ
-    - [Σιδηρόπουλος Αντώνιος](professor) email
-    - [Κώστογλου Βασίλειος](professor) μαιλ
-    - [Αρβανίτου Ελβίρα Μαρία](professor) μαιλ
-    - [Δέρβος Δημήτριος](professor) μαιλ
-    - [Καλλιδοπούλου Άννα-Ελένη](professor) μειλ
-    - [Ασδρέ Κατερίνα](professor) email
-    - [Δεληγιάννης Ιγνάτιος](professor) email
-    - [Δέρβος Δημήτριος](professor) μειλ
-    - [Καλλιδοπούλου Άννα-Ελένη](professor) μαιλ
-    - [Αμανατιάδης Δημήτριος](professor) μειλ
-    - [Βίτσας Βασίλειος](professor) μαιλ
-    - [Σαρηγιαννίδης Αντώνης](professor) mail
-    - [Τσιρογιάννης Ανδρέας](professor) email
-    - [Μπαλτατζής Δημήτριος](professor) mail
-    - [Μπαλτατζής Δημήτριος](professor) email
-    - [Αλεξούδη Θεονίτσα](professor) email
-    - [Αδαμίδης Παναγιώτης](professor) email
-    - [Αντωνίου Στάθης](professor) μαιλ
-    - [Μαρμόρκος Ιωάννης](professor) email
-    - [Χατζημίσιος Περικλής](professor) email
-    - [Δελημαράς Βασίλειος](professor) μαιλ
-    - [Αβδελίδης Κωνσταντίνος](professor) μαιλ
-    - [Αντωνίου Στάθης](professor) μειλ
-    - [Λαμπρόπουλος Γεωργιος](professor) email
-    - [Γουλιάνας Κων/νος](professor) mail
-    - [Μαρμόρκος Ιωάννης](professor) mail
-    - [Αμανατιάδης Δημήτριος](professor) mail
-    - [Αβδελίδης Κωνσταντίνος](professor) μειλ
-    - [Σπάσος Μιχαήλ](professor) email
-    - [Τσιακμάκης Κυριάκος](professor) email
-    - [Παπακώστας Δημήτριος](professor) μειλ
-    - [Μαρμόρκος Ιωάννης](professor) μαιλ
-    - [Τεκτονίδης Δημήτρης](professor) mail
-    - [Χατζόπουλος Αργύριος](professor) μαιλ
-    - [Τσιακμάκης Κυριάκος](professor) μειλ
-    - [Αγγέλου Κωνσταντίνος](professor) email
-    - [Ουγιάρογλου Στέφανος](professor) μειλ
-    - [Ιωσηφίδης Αθανάσιος](professor) μειλ
-    - [Τοκατλίδης Χρήστος](professor) μειλ
-    - [Αδαμίδης Παναγιώτης](professor) mail
-    - [Αρβανίτου Ελβίρα Μαρία](professor) μειλ
-    - [Κασδερίδης Ευστάθιος](professor) μειλ
-    - [Βίτσας Βασίλειος](professor) email
-    - [Ιωαννίδου Μελίνα](professor) email
-    - [Χρυσογιάννη Εύα](professor) μαιλ
-    - [Τσιακμάκης Κυριάκος](professor) mail
-    - [Κεραμόπουλος Ευκλείδης](professor) μαιλ
-    - [Σαλαμπάσης Μιχαήλ](professor) μαιλ
-    - [Βάσσιος Βασίλειος](professor) email
-    - [Αβδελίδης Κωνσταντίνος](professor) email
-    - [Λαμπρόπουλος Γεωργιος](professor) μειλ
-    - [Γιακουμής Άγγελος](professor) mail
-    - [Ιωσηφίδης Αθανάσιος](professor) μαιλ
-    - [Βίτσας Βασίλειος](professor) mail
-    - [Τσιριγώτης Γεώργιος](professor) μειλ
-    - [Δημητριάδης Παναγιώτης](professor) μειλ
-    - [Σιδηρόπουλος Αντώνιος](professor) μαιλ
-    - [Ιωσηφίδης Αθανάσιος](professor) email
-    - [Κασδερίδης Ευστάθιος](professor) email
-    - [Χρυσογιάννη Εύα](professor) mail
-    - [Ασδρέ Κατερίνα](professor) μειλ
-    - [Ουγιάρογλου Στέφανος](professor) mail
-    - [Αμπατζής Ζαφείριος](professor) μαιλ
-    - [Καλλιδοπούλου Άννα-Ελένη](professor) mail
-    - [Παπαδοπούλου Μαρία](professor) μειλ
-    - [Αρβανίτου Ελβίρα Μαρία](professor) email
-    - [Κωτσάκης Ρήγας](professor) email
-    - [Μαρμόρκος Ιωάννης](professor) μειλ
-    - [Σιδηρόπουλος Αντώνιος](professor) μειλ
-    - [Τσιακμάκης Κυριάκος](professor) μαιλ
-    - [Κωτσάκης Ρήγας](professor) mail
-    - [Αγγέλου Κωνσταντίνος](professor) mail
-    - [Ιωσηφίδης Αθανάσιος](professor) mail
-    - [Βίτσας Βασίλειος](professor) μειλ
-    - [Ηλιούδης Χρήστος](professor) μειλ
-    - [Τζέκης Παναγιώτης](professor) email
-    - [Διαμαντάρας Κωνσταντίνος](professor) email
-    - [Σαλαμπάσης Μιχαήλ](professor) μειλ
-    - [Κιοσκερίδης Ιορδάνης](professor) email
-    - [Μπαλτατζής Δημήτριος](professor) μειλ
-    - [Δέρβος Δημήτριος](professor) email
-    - [Τσελεγκαρίδης Σωκράτης](professor) mail
-    - [Κιοσκερίδης Ιορδάνης](professor) μαιλ
-    - [Παπακώστας Δημήτριος](professor) μαιλ
-    - [Δημητριάδης Παναγιώτης](professor) μαιλ
-- synonym: Αδαμίδης Παναγιώτης 
-  examples: | 
-    - Αδαμίδης
-    - ΑΔΑΜΊΔΗΣ
-    - αδαμίδης
-- synonym: Αμανατιάδης Δημήτριος 
-  examples: | 
-    - Αμανατιάδης
-    - ΑΜΑΝΑΤΙΆΔΗΣ
-    - αμανατιάδης
-- synonym: Γουλιάνας Κων/νος 
-  examples: | 
-    - Γουλιάνας
-    - ΓΟΥΛΙΆΝΑΣ
-    - γουλιάνας
-- synonym: Δεληγιάννης Ιγνάτιος 
-  examples: | 
-    - Δεληγιάννης
-    - ΔΕΛΗΓΙΆΝΝΗΣ
-    - δεληγιάννης
-- synonym: Κεραμόπουλος Ευκλείδης 
-  examples: | 
-    - Κεραμόπουλος
-    - ΚΕΡΑΜΌΠΟΥΛΟΣ
-    - κεραμόπουλος
-- synonym: Κώστογλου Βασίλειος 
-  examples: | 
-    - Κώστογλου
-    - ΚΏΣΤΟΓΛΟΥ
-    - κώστογλου
-- synonym: Σαλαμπάσης Μιχαήλ 
-  examples: | 
-    - Σαλαμπάσης
-    - ΣΑΛΑΜΠΆΣΗΣ
-    - σαλαμπάσης
-- synonym: Σιδηρόπουλος Αντώνιος 
-  examples: | 
-    - Σιδηρόπουλος
-    - ΣΙΔΗΡΌΠΟΥΛΟΣ
-    - σιδηρόπουλος
-- synonym: Αντωνίου Στάθης 
-  examples: | 
-    - Αντωνίου
-    - ΑΝΤΩΝΊΟΥ
-    - αντωνίου
-- synonym: Βίτσας Βασίλειος 
-  examples: | 
-    - Βίτσας
-    - ΒΊΤΣΑΣ
-    - βίτσας
-- synonym: Δέρβος Δημήτριος 
-  examples: | 
-    - Δέρβος
-    - ΔΈΡΒΟΣ
-    - δέρβος
-- synonym: Διαμαντάρας Κωνσταντίνος 
-  examples: | 
-    - Διαμαντάρας
-    - ΔΙΑΜΑΝΤΆΡΑΣ
-    - διαμαντάρας
-- synonym: Ηλιούδης Χρήστος 
-  examples: | 
-    - Ηλιούδης
-    - ΗΛΙΟΎΔΗΣ
-    - ηλιούδης
-- synonym: Χατζημίσιος Περικλής 
-  examples: | 
-    - Χατζημίσιος
-    - ΧΑΤΖΗΜΊΣΙΟΣ
-    - χατζημίσιος
-- synonym: Τεκτονίδης Δημήτρης 
-  examples: | 
-    - Τεκτονίδης
-    - ΤΕΚΤΟΝΊΔΗΣ
-    - τεκτονίδης
-- synonym: Ουγιάρογλου Στέφανος 
-  examples: | 
-    - Ουγιάρογλου
-    - ΟΥΓΙΆΡΟΓΛΟΥ
-    - ουγιάρογλου
-- synonym: Σαρηγιαννίδης Αντώνης 
-  examples: | 
-    - Σαρηγιαννίδης
-    - ΣΑΡΗΓΙΑΝΝΊΔΗΣ
-    - σαρηγιαννίδης
-- synonym: Αρβανίτου Ελβίρα 
-  examples: | 
-    - Αρβανίτου
-    - ΑΡΒΑΝΊΤΟΥ
-    - αρβανίτου
-- synonym: Ασδρέ Κατερίνα 
-  examples: | 
-    - Ασδρέ
-    - ΑΣΔΡΈ
-    - ασδρέ
-- synonym: Αμπατζής Ζαφείριος 
-  examples: | 
-    - Αμπατζής
-    - ΑΜΠΑΤΖΉΣ
-    - αμπατζής
-- synonym: Αγγέλου Κωνσταντίνος 
-  examples: | 
-    - Αγγέλου
-    - ΑΓΓΈΛΟΥ
-    - αγγέλου
-- synonym: Τσιακμάκης Κυριάκος 
-  examples: | 
-    - Τσιακμάκης
-    - ΤΣΙΑΚΜΆΚΗΣ
-    - τσιακμάκης
-- synonym: Καζακόπουλος Αριστοτέλης 
-  examples: | 
-    - Καζακόπουλος
-    - ΚΑΖΑΚΌΠΟΥΛΟΣ
-    - καζακόπουλος
-- synonym: Κιοσκερίδης Ιορδάνης 
-  examples: | 
-    - Κιοσκερίδης
-    - ΚΙΟΣΚΕΡΊΔΗΣ
-    - κιοσκερίδης
-- synonym: Μαρμόρκος Ιωάννης 
-  examples: | 
-    - Μαρμόρκος
-    - ΜΑΡΜΌΡΚΟΣ
-    - μαρμόρκος
-- synonym: Μπάμνιος Γεώργιος 
-  examples: | 
-    - Μπάμνιος
-    - ΜΠΆΜΝΙΟΣ
-    - μπάμνιος
-- synonym: Παπακώστας Δημήτριος 
-  examples: | 
-    - Παπακώστας
-    - ΠΑΠΑΚΏΣΤΑΣ
-    - παπακώστας
-- synonym: Ιωαννίδου Μελίνα 
-  examples: | 
-    - Ιωαννίδου
-    - ΙΩΑΝΝΊΔΟΥ
-    - ιωαννίδου
-- synonym: Ιωσηφίδης Αθανάσιος 
-  examples: | 
-    - Ιωσηφίδης
-    - ΙΩΣΗΦΊΔΗΣ
-    - ιωσηφίδης
-- synonym: Σπάσος Μιχαήλ 
-  examples: | 
-    - Σπάσος
-    - ΣΠΆΣΟΣ
-    - σπάσος
-- synonym: Τζέκης Παναγιώτης 
-  examples: | 
-    - Τζέκης
-    - ΤΖΈΚΗΣ
-    - τζέκης
-- synonym: Χατζόπουλος Αργύριος 
-  examples: | 
-    - Χατζόπουλος
-    - ΧΑΤΖΌΠΟΥΛΟΣ
-    - χατζόπουλος
-- synonym: Γιακουμής Άγγελος 
-  examples: | 
-    - Γιακουμής
-    - ΓΙΑΚΟΥΜΉΣ
-    - γιακουμής
-- synonym: Μανάβης Χρήστος 
-  examples: | 
-    - Μανάβης
-    - ΜΑΝΆΒΗΣ
-    - μανάβης
-- synonym: Σαπουνίδης Θεοδόσης 
-  examples: | 
-    - Σαπουνίδης
-    - ΣΑΠΟΥΝΊΔΗΣ
-    - σαπουνίδης
-- synonym: Χρυσογιάννη Εύα 
-  examples: | 
-    - Χρυσογιάννη
-    - ΧΡΥΣΟΓΙΆΝΝΗ
-    - χρυσογιάννη
-- synonym: Δημητριάδης Παναγιώτης 
-  examples: | 
-    - Δημητριάδης
-    - ΔΗΜΗΤΡΙΆΔΗΣ
-    - δημητριάδης
-- synonym: Αβδελίδης Κωνσταντίνος 
-  examples: | 
-    - Αβδελίδης
-    - ΑΒΔΕΛΊΔΗΣ
-    - αβδελίδης
-- synonym: Αλεξούδη Θεονίτσα 
-  examples: | 
-    - Αλεξούδη
-    - ΑΛΕΞΟΎΔΗ
-    - αλεξούδη
-- synonym: Καπλάνογλου Παντελής 
-  examples: | 
-    - Καπλάνογλου
-    - ΚΑΠΛΆΝΟΓΛΟΥ
-    - καπλάνογλου
-- synonym: Βάσσιος Βασίλειος 
-  examples: | 
-    - Βάσσιος
-    - ΒΆΣΣΙΟΣ
-    - βάσσιος
-- synonym: Παπαδοπούλου Μαρία 
-  examples: | 
-    - Παπαδοπούλου
-    - ΠΑΠΑΔΟΠΟΎΛΟΥ
-    - παπαδοπούλου
-- synonym: Δελημαράς Βασίλειος 
-  examples: | 
-    - Δελημαράς
-    - ΔΕΛΗΜΑΡΆΣ
-    - δελημαράς
-- synonym: Τσιριγώτης Γεώργιος 
-  examples: | 
-    - Τσιριγώτης
-    - ΤΣΙΡΙΓΏΤΗΣ
-    - τσιριγώτης
-- synonym: Τσελεγκαρίδης Σωκράτης 
-  examples: | 
-    - Τσελεγκαρίδης
-    - ΤΣΕΛΕΓΚΑΡΊΔΗΣ
-    - τσελεγκαρίδης
-- synonym: Λαμπρόπουλος Γεωργιος 
-  examples: | 
-    - Λαμπρόπουλος
-    - ΛΑΜΠΡΌΠΟΥΛΟΣ
-    - λαμπρόπουλος
-- synonym: Καλλιδοπούλου Άννα-Ελένη 
-  examples: | 
-    - Καλλιδοπούλου
-    - ΚΑΛΛΙΔΟΠΟΎΛΟΥ
-    - καλλιδοπούλου
-- synonym: Κασδερίδης Ευστάθιος 
-  examples: | 
-    - Κασδερίδης
-    - ΚΑΣΔΕΡΊΔΗΣ
-    - κασδερίδης
-- synonym: Τοκατλίδης Χρήστος 
-  examples: | 
-    - Τοκατλίδης
-    - ΤΟΚΑΤΛΊΔΗΣ
-    - τοκατλίδης
-- synonym: Τσιρογιάννης Ανδρέας 
-  examples: | 
-    - Τσιρογιάννης
-    - ΤΣΙΡΟΓΙΆΝΝΗΣ
-    - τσιρογιάννης
-- synonym: Μπαλτατζής Δημήτριος 
-  examples: | 
-    - Μπαλτατζής
-    - ΜΠΑΛΤΑΤΖΉΣ
-    - μπαλτατζής
-- synonym: Κωτσάκης Ρήγας 
-  examples: | 
-    - Κωτσάκης
-    - ΚΩΤΣΆΚΗΣ
-    - κωτσάκης
+    - ποιο ειναι το [webmail](yphresia) του [Αδαμίδης Παναγιώτης](professor)
+    - [email](yphresia) [Αμανατιάδης Δημήτριος](professor)
+    - ποιο ειναι το [email](yphresia) του [Αμανατιάδης Δημήτριος](professor)
+    - ποιο ειναι το [μαιλ](yphresia) [Αδαμίδης Παναγιώτης](professor)
+    - [μαιλ](yphresia) [Αδαμίδης Παναγιώτης](professor)
+    - ποιο ειναι το [μειλ](yphresia) [Αδαμίδης Παναγιώτης](professor)
+    - [μειλ](yphresia) [Αμανατιάδης Δημήτριος](professor)
+    - [εμαιλ](yphresia) [Γουλιάνας Κων/νος](professor)
+    - ποιο ειναι το [εμειλ](yphresia) [Αδαμίδης Παναγιώτης](professor)
+    - [εμαιλ](yphresia) [Γουλιάνας Κων/νος](professor)
+    - ποιο ειναι το [εμειλ](yphresia) [Αδαμίδης Παναγιώτης](professor)
+    - [mail](yphresia) [Δεληγιάννης Ιγνάτιος](professor)
+    - ποιο ειναι το [mail](yphresia) [Αδαμίδης Παναγιώτης](professor)
+    - [webmail](yphresia) [Κεραμόπουλος Ευκλείδης](professor)
+    - [webmail](yphresia) [Κώστογλου Βασίλειος](professor)
+    - [webmail](yphresia) [Σαλαμπάσης Μιχαήλ](professor)
+    - [webmail](yphresia) [Σιδηρόπουλος Αντώνιος](professor)
+    - [webmail](yphresia) [Αντωνίου Στάθης](professor)
+    - [webmail](yphresia) [Βίτσας Βασίλειος](professor)
+    - [webmail](yphresia) [Δέρβος Δημήτριος](professor)
+    - [webmail](yphresia) [Διαμαντάρας Κωνσταντίνος](professor)
+    - [webmail](yphresia) [Ηλιούδης Χρήστος](professor)
+    - [webmail](yphresia) [Χατζημίσιος Περικλής](professor)
+    - [webmail](yphresia) [Τεκτονίδης Δημήτρης](professor)
+    - [webmail](yphresia) [Ουγιάρογλου Στέφανος](professor)
+    - [webmail](yphresia) [Σαρηγιαννίδης Αντώνης](professor)
+    - [webmail](yphresia) [Αρβανίτου Ελβίρα Μαρία](professor)
+    - [webmail](yphresia) [Ασδρέ Κατερίνα](professor)
+    - [webmail](yphresia) [Αμπατζής Ζαφείριος](professor)
+    - [webmail](yphresia) [Αγγέλου Κωνσταντίνος](professor)
+    - [webmail](yphresia) [Τσιακμάκης Κυριάκος](professor)
+    - [webmail](yphresia) [Καζακόπουλος Αριστοτέλης](professor)
+    - [webmail](yphresia) [Κιοσκερίδης Ιορδάνης](professor)
+    - [webmail](yphresia) [Μαρμόρκος Ιωάννης](professor)
+    - [webmail](yphresia) [Μπάμνιος Γεώργιος](professor)
+    - [webmail](yphresia) [Παπακώστας Δημήτριος](professor)
+    - [webmail](yphresia) [Ιωαννίδου Μελίνα](professor)
+    - [webmail](yphresia) [Ιωσηφίδης Αθανάσιος](professor)
+    - [webmail](yphresia) [Σπάσος Μιχαήλ](professor)
+    - [webmail](yphresia) [Τζέκης Παναγιώτης](professor)
+    - [webmail](yphresia) [Χατζόπουλος Αργύριος](professor)
+    - [webmail](yphresia) [Γιακουμής Άγγελος](professor)
+    - [webmail](yphresia) [Μανάβης Χρήστος](professor)
+    - [webmail](yphresia) [Σαπουνίδης Θεοδόσης](professor)
+    - [webmail](yphresia) [Χρυσογιάννη Εύα](professor)
+    - [webmail](yphresia) [Δημητριάδης Παναγιώτης](professor)
+    - [webmail](yphresia) [Αβδελίδης Κωνσταντίνος](professor)
+    - [webmail](yphresia) [Αλεξούδη Θεονίτσα](professor)
+    - [webmail](yphresia) [Καπλάνογλου Παντελής](professor)
+    - [webmail](yphresia) [Βάσσιος Βασίλειος](professor)
+    - [webmail](yphresia) [Παπαδοπούλου Μαρία](professor)
+    - [webmail](yphresia) [Δελημαράς Βασίλειος](professor)
+    - [webmail](yphresia) [Τσιριγώτης Γεώργιος](professor)
+    - [webmail](yphresia) [Τσελεγκαρίδης Σωκράτης](professor)
+    - [webmail](yphresia) [Λαμπρόπουλος Γεωργιος](professor)
+    - [webmail](yphresia) [Καλλιδοπούλου Άννα-Ελένη](professor)
+    - [webmail](yphresia) [Κασδερίδης Ευστάθιος](professor)
+    - [webmail](yphresia) [Τοκατλίδης Χρήστος](professor)
+    - [webmail](yphresia) [Τσιρογιάννης Ανδρέας](professor)
+    - [webmail](yphresia) [Μπαλτατζής Δημήτριος](professor)
+    - [webmail](yphresia) [Κωτσάκης Ρήγας](professor)
+    - [webmail](yphresia) [Αδαμίδη Παναγιώτης](professor)
+    - [webmail](yphresia) [Αμανατιάδη Δημήτριος](professor)
+    - [webmail](yphresia) [Γουλιάνα Κων/νος](professor)
+    - [webmail](yphresia) [Δεληγιάννη Ιγνάτιος](professor)
+    - [webmail](yphresia) [Κεραμόπουλο Ευκλείδης](professor)
+    - [webmail](yphresia) [Κώστογλο Βασίλειος](professor)
+    - [webmail](yphresia) [Σαλαμπάση Μιχαήλ](professor)
+    - [webmail](yphresia) [Σιδηρόπουλο Αντώνιος](professor)
+    - [webmail](yphresia) [Αντωνίο Στάθης](professor)
+    - [webmail](yphresia) [Βίτσα Βασίλειος](professor)
+    - [webmail](yphresia) [Δέρβο Δημήτριος](professor)
+    - [webmail](yphresia) [Διαμαντάρα Κωνσταντίνος](professor)
+    - [webmail](yphresia) [Ηλιούδη Χρήστος](professor)
+    - [webmail](yphresia) [Χατζημίσιο Περικλής](professor)
+    - [webmail](yphresia) [Τεκτονίδη Δημήτρης](professor)
+    - [webmail](yphresia) [Ουγιάρογλο Στέφανος](professor)
+    - [webmail](yphresia) [Σαρηγιαννίδη Αντώνης](professor)
+    - [webmail](yphresia) [Αρβανίτο Ελβίρα Μαρία](professor)
+    - [webmail](yphresia) [Ασδρ Κατερίνα](professor)
+    - [webmail](yphresia) [Αμπατζή Ζαφείριος](professor)
+    - [webmail](yphresia) [Αγγέλο Κωνσταντίνος](professor)
+    - [webmail](yphresia) [Τσιακμάκη Κυριάκος](professor)
+    - [webmail](yphresia) [Καζακόπουλο Αριστοτέλης](professor)
+    - [webmail](yphresia) [Κιοσκερίδη Ιορδάνης](professor)
+    - [webmail](yphresia) [Μαρμόρκο Ιωάννης](professor)
+    - [webmail](yphresia) [Μπάμνιο Γεώργιος](professor)
+    - [webmail](yphresia) [Παπακώστα Δημήτριος](professor)
+    - [webmail](yphresia) [Ιωαννίδο Μελίνα](professor)
+    - [webmail](yphresia) [Ιωσηφίδη Αθανάσιος](professor)
+    - [webmail](yphresia) [Σπάσο Μιχαήλ](professor)
+    - [webmail](yphresia) [Τζέκη Παναγιώτης](professor)
+    - [webmail](yphresia) [Χατζόπουλο Αργύριος](professor)
+    - [webmail](yphresia) [Γιακουμή Άγγελος](professor)
+    - [webmail](yphresia) [Μανάβη Χρήστος](professor)
+    - [webmail](yphresia) [Σαπουνίδη Θεοδόσης](professor)
+    - [webmail](yphresia) [Χρυσογιάνν Εύα](professor)
+    - [webmail](yphresia) [Δημητριάδη Παναγιώτης](professor)
+    - [webmail](yphresia) [Αβδελίδη Κωνσταντίνος](professor)
+    - [webmail](yphresia) [Αλεξούδ Θεονίτσα](professor)
+    - [webmail](yphresia) [Καπλάνογλο Παντελής](professor)
+    - [webmail](yphresia) [Βάσσιο Βασίλειος](professor)
+    - [webmail](yphresia) [Παπαδοπούλο Μαρία](professor)
+    - [webmail](yphresia) [Δελημαρά Βασίλειος](professor)
+    - [webmail](yphresia) [Τσιριγώτη Γεώργιος](professor)
+    - [webmail](yphresia) [Τσελεγκαρίδη Σωκράτης](professor)
+    - [webmail](yphresia) [Λαμπρόπουλο Γεωργιος](professor)
+    - [webmail](yphresia) [Καλλιδοπούλο Άννα-Ελένη](professor)
+    - [webmail](yphresia) [Κασδερίδη Ευστάθιος](professor)
+    - [webmail](yphresia) [Τοκατλίδη Χρήστος](professor)
+    - [webmail](yphresia) [Τσιρογιάννη Ανδρέας](professor)
+    - [webmail](yphresia) [Μπαλτατζή Δημήτριος](professor)
+    - [webmail](yphresia) [Κωτσάκη Ρήγας](professor)
+    - [webmail](yphresia) [Αδαμιδης Παναγιωτης](professor)
+    - [webmail](yphresia) [Αμανατιαδης Δημητριος](professor)
+    - [webmail](yphresia) [Γουλιανας Κων/νος](professor)
+    - [webmail](yphresia) [Δεληγιαννης Ιγνατιος](professor)
+    - [webmail](yphresia) [Κεραμοπουλος Ευκλειδης](professor)
+    - [webmail](yphresia) [Κωστογλου Βασιλειος](professor)
+    - [webmail](yphresia) [Σαλαμπασης Μιχαηλ](professor)
+    - [webmail](yphresia) [Σιδηροπουλος Αντωνιος](professor)
+    - [webmail](yphresia) [Αντωνιου Σταθης](professor)
+    - [webmail](yphresia) [Βιτσας Βασιλειος](professor)
+    - [webmail](yphresia) [Δερβος Δημητριος](professor)
+    - [webmail](yphresia) [Διαμανταρας Κωνσταντινος](professor)
+    - [webmail](yphresia) [Ηλιουδης Χρηστος](professor)
+    - [webmail](yphresia) [Χατζημισιος Περικλης](professor)
+    - [webmail](yphresia) [Τεκτονιδης Δημητρης](professor)
+    - [webmail](yphresia) [Ουγιαρογλου Στεφανος](professor)
+    - [webmail](yphresia) [Σαρηγιαννιδης Αντωνης](professor)
+    - [webmail](yphresia) [Αρβανιτου Ελβιρα Μαρια](professor)
+    - [webmail](yphresia) [Ασδρε Κατερινα](professor)
+    - [webmail](yphresia) [Αμπατζης Ζαφειριος](professor)
+    - [webmail](yphresia) [Αγγελου Κωνσταντινος](professor)
+    - [webmail](yphresia) [Τσιακμακης Κυριακος](professor)
+    - [webmail](yphresia) [Καζακοπουλος Αριστοτελης](professor)
+    - [webmail](yphresia) [Κιοσκεριδης Ιορδανης](professor)
+    - [webmail](yphresia) [Μαρμορκος Ιωαννης](professor)
+    - [webmail](yphresia) [Μπαμνιος Γεωργιος](professor)
+    - [webmail](yphresia) [Παπακωστας Δημητριος](professor)
+    - [webmail](yphresia) [Ιωαννιδου Μελινα](professor)
+    - [webmail](yphresia) [Ιωσηφιδης Αθανασιος](professor)
+    - [webmail](yphresia) [Σπασος Μιχαηλ](professor)
+    - [webmail](yphresia) [Τζεκης Παναγιωτης](professor)
+    - [webmail](yphresia) [Χατζοπουλος Αργυριος](professor)
+    - [webmail](yphresia) [Γιακουμης αγγελος](professor)
+    - [webmail](yphresia) [Μαναβης Χρηστος](professor)
+    - [webmail](yphresia) [Σαπουνιδης Θεοδοσης](professor)
+    - [webmail](yphresia) [Χρυσογιαννη Ευα](professor)
+    - [webmail](yphresia) [Δημητριαδης Παναγιωτης](professor)
+    - [webmail](yphresia) [Αβδελιδης Κωνσταντινος](professor)
+    - [webmail](yphresia) [Αλεξουδη Θεονιτσα](professor)
+    - [webmail](yphresia) [Καπλανογλου Παντελης](professor)
+    - [webmail](yphresia) [Βασσιος Βασιλειος](professor)
+    - [webmail](yphresia) [Παπαδοπουλου Μαρια](professor)
+    - [webmail](yphresia) [Δελημαρας Βασιλειος](professor)
+    - [webmail](yphresia) [Τσιριγωτης Γεωργιος](professor)
+    - [webmail](yphresia) [Τσελεγκαριδης Σωκρατης](professor)
+    - [webmail](yphresia) [Λαμπροπουλος Γεωργιος](professor)
+    - [webmail](yphresia) [Καλλιδοπουλου αννα-Ελενη](professor)
+    - [webmail](yphresia) [Κασδεριδης Ευσταθιος](professor)
+    - [webmail](yphresia) [Τοκατλιδης Χρηστος](professor)
+    - [webmail](yphresia) [Τσιρογιαννης Ανδρεας](professor)
+    - [webmail](yphresia) [Μπαλτατζης Δημητριος](professor)
+    - [webmail](yphresia) [Κωτσακης Ρηγας](professor)
+    - [webmail](yphresia) [Αδαμιδη Παναγιωτης](professor)
+    - [webmail](yphresia) [Αμανατιαδη Δημητριος](professor)
+    - [webmail](yphresia) [Γουλιανα Κων/νος](professor)
+    - [webmail](yphresia) [Δεληγιαννη Ιγνατιος](professor)
+    - [webmail](yphresia) [Κεραμοπουλο Ευκλειδης](professor)
+    - [webmail](yphresia) [Κωστογλο Βασιλειος](professor)
+    - [webmail](yphresia) [Σαλαμπαση Μιχαηλ](professor)
+    - [webmail](yphresia) [Σιδηροπουλο Αντωνιος](professor)
+    - [webmail](yphresia) [Αντωνιο Σταθης](professor)
+    - [webmail](yphresia) [Βιτσα Βασιλειος](professor)
+    - [webmail](yphresia) [Δερβο Δημητριος](professor)
+    - [webmail](yphresia) [Διαμανταρα Κωνσταντινος](professor)
+    - [webmail](yphresia) [Ηλιουδη Χρηστος](professor)
+    - [webmail](yphresia) [Χατζημισιο Περικλης](professor)
+    - [webmail](yphresia) [Τεκτονιδη Δημητρης](professor)
+    - [webmail](yphresia) [Ουγιαρογλο Στεφανος](professor)
+    - [webmail](yphresia) [Σαρηγιαννιδη Αντωνης](professor)
+    - [webmail](yphresia) [Αρβανιτο Ελβιρα Μαρια](professor)
+    - [webmail](yphresia) [Ασδρ Κατερινα](professor)
+    - [webmail](yphresia) [Αμπατζη Ζαφειριος](professor)
+    - [webmail](yphresia) [Αγγελο Κωνσταντινος](professor)
+    - [webmail](yphresia) [Τσιακμακη Κυριακος](professor)
+    - [webmail](yphresia) [Καζακοπουλο Αριστοτελης](professor)
+    - [webmail](yphresia) [Κιοσκεριδη Ιορδανης](professor)
+    - [webmail](yphresia) [Μαρμορκο Ιωαννης](professor)
+    - [webmail](yphresia) [Μπαμνιο Γεωργιος](professor)
+    - [webmail](yphresia) [Παπακωστα Δημητριος](professor)
+    - [webmail](yphresia) [Ιωαννιδο Μελινα](professor)
+    - [webmail](yphresia) [Ιωσηφιδη Αθανασιος](professor)
+    - [webmail](yphresia) [Σπασο Μιχαηλ](professor)
+    - [webmail](yphresia) [Τζεκη Παναγιωτης](professor)
+    - [webmail](yphresia) [Χατζοπουλο Αργυριος](professor)
+    - [webmail](yphresia) [Γιακουμη αγγελος](professor)
+    - [webmail](yphresia) [Μαναβη Χρηστος](professor)
+    - [webmail](yphresia) [Σαπουνιδη Θεοδοσης](professor)
+    - [webmail](yphresia) [Χρυσογιανν Ευα](professor)
+    - [webmail](yphresia) [Δημητριαδη Παναγιωτης](professor)
+    - [webmail](yphresia) [Αβδελιδη Κωνσταντινος](professor)
+    - [webmail](yphresia) [Αλεξουδ Θεονιτσα](professor)
+    - [webmail](yphresia) [Καπλανογλο Παντελης](professor)
+    - [webmail](yphresia) [Βασσιο Βασιλειος](professor)
+    - [webmail](yphresia) [Παπαδοπουλο Μαρια](professor)
+    - [webmail](yphresia) [Δελημαρα Βασιλειος](professor)
+    - [webmail](yphresia) [Τσιριγωτη Γεωργιος](professor)
+    - [webmail](yphresia) [Τσελεγκαριδη Σωκρατης](professor)
+    - [webmail](yphresia) [Λαμπροπουλο Γεωργιος](professor)
+    - [webmail](yphresia) [Καλλιδοπουλο αννα-Ελενη](professor)
+    - [webmail](yphresia) [Κασδεριδη Ευσταθιος](professor)
+    - [webmail](yphresia) [Τοκατλιδη Χρηστος](professor)
+    - [webmail](yphresia) [Τσιρογιαννη Ανδρεας](professor)
+    - [webmail](yphresia) [Μπαλτατζη Δημητριος](professor)
+    - [webmail](yphresia) [Κωτσακη Ρηγας](professor)
