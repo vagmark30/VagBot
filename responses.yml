@@ -2,6 +2,9 @@ responses:
   utter_greet_and_ask:
   - text: |
       Γειά! Πως μπορώ να βοηθήσω;
+  utter_goodbye:
+  - text: |
+      Αντίο, καλή σας συνέχεια!
   utter_ask_anything_else:
   - text: |
       Υπάρχει κάτι άλλο στο οποίο μπορώ να σας βοηθήσω;      

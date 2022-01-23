@@ -9,6 +9,8 @@ stories:
   - intent: bot_challenge
   - action: utter_i_am_bot
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: covered topics
   steps:
   - intent: which_topics_are_covered
@@ -20,6 +22,8 @@ stories:
   - intent: affirm
   - action: utter_able_ptyxiakh
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: ptyxiakh unable
   steps:
   - intent: am_i_able_ptyxiakh
@@ -27,6 +31,8 @@ stories:
   - intent: deny
   - action: utter_unable_ptyxiakh
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: diplwmatikh able
   steps:
   - intent: am_i_able_diplwmatikh
@@ -34,6 +40,8 @@ stories:
   - intent: affirm
   - action: utter_able_diplwmatikh
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: diplwmatikh unable
   steps:
   - intent: am_i_able_diplwmatikh
@@ -41,36 +49,50 @@ stories:
   - intent: deny
   - action: utter_unable_diplwmatikh
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: how many dm have i
   steps:
   - intent: how_many_dm_have_i
   - action: utter_how_many_dm_have_i
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: emvolimh able
   steps:
   - intent: am_i_able_emvolimh
   - action: utter_ability_for_emvolimh
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: emvolimh courses
   steps:
   - intent: which_courses_are_offered_in_emvolimh
   - action: utter_courses_offered_in_emvolimh
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: problem with service
   steps:
   - intent: having_issue_with_a_service
   - action: action_resolve_issue
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: who is in charge of a service
   steps:
   - intent: in_charge_of_service
   - action: action_in_charge_of_service
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: password recovery
   steps:
   - intent: password_recovery
   - action: action_password_recovery
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: problem with apps as registred
   steps:
   - intent: problem_with_apps
@@ -78,6 +100,8 @@ stories:
   - intent: affirm
   - action: utter_problem_as_registred_on_apps
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: problem with apps as non registred
   steps:
   - intent: problem_with_apps
@@ -85,18 +109,26 @@ stories:
   - intent: deny
   - action: utter_problem_as_non_registred_on_apps
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: professor info
   steps:
   - intent: whats_the_professors_info
   - action: action_get_professor_info
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: professor courses
   steps:
   - intent: which_courses_by_professor
   - action: action_get_professor_courses
   - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye
 - story: exams schedule
   steps:
   - intent: exams_schedule
   - action: utter_exams_schedule
-  - action: utter_ask_anything_else        
+  - action: utter_ask_anything_else
+  - intent: deny
+  - action: utter_goodbye        

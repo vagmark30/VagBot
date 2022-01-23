@@ -7,6 +7,8 @@ nlu:
     - Χαιρεται
     - Χαίρεται
     - γεια
+    - Καλησπέρα
+    - Καλημέρα
 - intent: bot_challenge
   examples: |
     - Εισαι ρομποτ;
@@ -28,6 +30,9 @@ nlu:
     - ν
     - Ναι!
     - Προφανως
+    - Εχω
+    - Σιγουρα
+    - Φυσικα
 - intent: deny
   examples: |
     - οχι!
@@ -35,6 +40,7 @@ nlu:
     - οχι
     - Μπα
     - Δυσκολα
+    - Δεν εχω
 - intent: am_i_able_ptyxiakh
   examples: |
     - Μπορω να παρω πτυχιακη?
@@ -64,6 +70,7 @@ nlu:
     - Ποιά ειναι τα κριτήρια για να συμμετασχω στην εμβολιμη εξεταστικη;
     - Τι πρεπει να εχω για να δωσω στην εμβολιμη;
     - Τι πρεπει να εχει κανεις για να εχει δικαίωμα συμμετοχής στις εμβόλιμες εξεταστικές;
+    - μπορω να δωσω εμβολιμη
 - intent: which_courses_are_offered_in_emvolimh
   examples: |
     - Ποιά μαθήματα προσφέρονται στην εμβόλιμη εξεταστική;
@@ -85,6 +92,7 @@ nlu:
     - Έχω προβλημα με τον [Ευδοξο]{"entity": "yphresia", "value": "eudoxos"}
     - προβλήματα με [moodle](yphresia)
     - Έχω προβλημα με το [μοοδλε]{"entity": "yphresia", "value": "moodle"}
+    - εχω προβλημα με το [apps](yphresia)
 - intent: in_charge_of_service
   examples: |
     - Απο ποιον διαχειριζεται το [apps](yphresia)
@@ -103,20 +111,20 @@ nlu:
     - Έχω ξεχάσει τον κωδικό μου στο [πυθια]{"entity": "yphresia", "value": "pithia"}
     - Έχω ξεχάσει τον κωδικό μου στο [mail]{"entity": "yphresia", "value": "webmail"}
     - Έχω ξεχάσει τον κωδικό μου στο [thesis](yphresia)
-    - Έχω ξεχάσει τον κωδικό μου στο [αππς]{"entity": "yphresia", "value": "apps"}
     - Έχω ξεχάσει τον κωδικό μου στο [vpn](yphresia)
     - Έχω ξεχάσει τον κωδικό μου στο [academicid](yphresia)
     - Έχω ξεχάσει τον κωδικό μου στο [eduroam](yphresia)
-    - Ανάκτηση κωδικού [apps]{"entity": "yphresia", "value": "apps"}    
+    - Ανάκτηση κωδικού [apps](yphresia)
     - Ανάκτηση κωδικού [μοοντλ]{"entity": "yphresia", "value": "moodle"}
     - Ανάκτηση κωδικού [Ευδοξο]{"entity": "yphresia", "value": "eudoxos"}
     - Ανάκτηση κωδικού [pithia](yphresia)
     - Ανάκτηση κωδικού [μειλ]{"entity": "yphresia", "value": "webmail"}
     - Ανάκτηση κωδικού [θεσης]{"entity": "yphresia", "value": "thesis"}
-    - Ανάκτηση κωδικού [apps](yphresia)
     - Ανάκτηση [vpn](yphresia)
     - Ανάκτηση κωδικού [academicid](yphresia)
     - Ανάκτηση κωδικού [eduroam](yphresia)
+    - εχω ξεχασει τον κωδικο μου στο [apps](yphresia)
+    - εχω χασει το κωδικο του [apps](yphresia)
 - intent: problem_with_apps
   examples: |
     - Δεν μπορω να συνδεθω στο apps
@@ -128,7 +136,7 @@ nlu:
     - Ποιο ειναι το προγραμμα εξεταστικης;
     - Που μπορω να βρω το προγραμμα εξεταστικης;
     - Που υπαρχει το προγραμμα εξεταστικης;
-    - Προγραμμα εξεταστικής;     
+    - Προγραμμα εξεταστικής;
 - intent: out_of_scope
   examples: |
     - Ασχετα
