@@ -2,8 +2,8 @@ version: '2.0'
 config:
   store_entities_as_slots: true
 session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  session_expiration_time: 5
+  carry_over_slots_to_new_session: false
 intents:
 - greet:
     use_entities: true
@@ -57,13 +57,16 @@ slots:
 responses:
   utter_greet_and_ask:
   - text: |
-      Γειά! Πως μπορώ να βοηθήσω;
+      Γειά! Πως μπορώ να σας βοηθήσω;
   utter_goodbye:
   - text: |
       Αντίο, καλή σας συνέχεια!
   utter_ask_anything_else:
   - text: |
-      Υπάρχει κάτι άλλο στο οποίο μπορώ να σας βοηθήσω;      
+      Υπάρχει κάτι άλλο στο οποίο μπορώ να σας βοηθήσω;
+  utter_ask_else:
+  - text: |
+      Πως μπορώ να σας βοηθήσω;         
   utter_i_am_bot:
   - text: |
       Είμαι ενα Chatμποτ
@@ -79,7 +82,8 @@ responses:
         - Προβλήματα σύνδεσης στις υπηρεσίες του τμήματος όπως Apps, Moodle, Thesis, Webmail, Pithia, Eudoxos, AcademicID.
         - Προϋποθέσεις ανάληψης πτυχιακής/διπλωματικής εργασίας.
         - Που πρέπει να απευθυνθεί κανείς για απορίες ή προβλήματα.              
-        - Προϋποθέσεις συμμετοχής στην εμβόλιμη εξεταστική και ποιά μαθήματα προσφέρονται.   
+        - Προϋποθέσεις συμμετοχής στην εμβόλιμη εξεταστική και ποιά μαθήματα προσφέρονται.
+        - Ενημέρωση για το πρόγραμμα εξεταστικής.  
   utter_ask_dm_ptyxiakh:
   - text: |
       Έχεις συμπληρώσει 160 Δ.Μ;
