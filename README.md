@@ -7,11 +7,7 @@ to assist student in studies
 ```
 ![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDE.png)
 
-```
-Available topics
-```
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhTopics.png)
-```
+
 Examples
 ```
 ![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/conv1.png)
