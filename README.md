@@ -7,7 +7,7 @@ to assist student in studies
 ```
 ![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDE.png)
 
-
+```
 Examples
 ```
 ![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/conv1.png)
