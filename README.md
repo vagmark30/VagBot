@@ -1,23 +1,20 @@
-# Working on an assistant for iee ihu
+# VagBot, An IEE IHU Assistant
 ![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/IEE_logo_v2.svg)
+
+```
+Design and implementation of conversational robot 
+to assist student in studies
+```
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDE.png)
 
 ```
 Available topics
 ```
 ![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhTopics.png)
+```
+Examples
+```
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/conv1.png)
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/conv2.png)
+![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/conv3.png)
 
-```
-Entity recognition on any professor and custom search on mysql
-```
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhActionMysql.png)
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhInfoIncharge.png)
-
-```
-Demo dilplwmatikh
-```
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhDiplwmatikh.png)
-
-```
-Demo emvolimh
-```
-![alt text](https://raw.githubusercontent.com/vagmark30/VagBot/main/imgs/DemoDiplwmatikhEmvolimh.png)
